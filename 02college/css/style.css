@@ -7,7 +7,7 @@
        margin: 0 auto;
        position: relative;}
 .right {position: absolute;
-        right: -10px;
+        right: 0;
         top:10px;}
 .menu .left li {float: left;
                 width: 120px;
@@ -17,12 +17,34 @@
 .menu .left li:nth-child(1) {background: #fff;}
 .menu .left li:nth-child(2) {background: #00163b;}
 .menu .left li:nth-child(3) {background: #00163b;}
-
+.menu .left li:nth-child(1) a {color:#6c6c6c;}
+.menu .left li:nth-child(2) a {color:#fff;}
+.menu .left li:nth-child(3) a {color:#fff;}
 .menu .right li {display: inline;}
-.menu .right li a {color:#fff;}
+.menu .right li a {color:#fff;
+                   margin-left:12px;}
 
 .nav {width: 100%;
       height: 120px;}
+.nav .logo {width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            top:30px;}
+.nav .logo img {float: left;}
+.nav .logo h1,
+.nav .logo p {color:#6b6b6b}
+.nav .logo h1:after {content: "";
+                    display: block;
+                    width: 230px;
+                    height: 1px;
+                    background: #d2d2d2;}
+.navRight {position: absolute;
+          right: 0;
+          top:20px;}
+.nav .navRight li {display: inline;}
+.nav .navRight li img {float:right;}
+.nav .navRight li a {margin-left:50px;
+                     color:#474747;}
 
 /*contents*/
 #contents {height: 1300px;
@@ -36,24 +58,32 @@
                       height: 260px;
                       .background: violet;
                       margin: 0 auto;
-                      margin-bottom: 50px;}
+                      margin-top:-100px;
+                      margin-bottom: 60px;
+                      position: relative;}
+#contents .titleWrap .titleL {float:left;
+                             margin-top: 70px;}
+#contents .titleWrap .titleL p {color:#fff;
+                                font-size: 40px;}
+#contents .titleWrap .titleL p:nth-child(2){font-size:50px;
+                                            font-weight: 600;}
+#contents .titleWrap .titleR {position: absolute;
+                              right: 0;}
+#contents .titleWrap .titleR li {display: inline-block;
+                                 margin-left: 20px;
+                                 margin-top: 70px;}
+#contents .titleWrap .titleR li p {color:#fff;
+                                  text-align:center;}
 
-.titleL {float:left;
-         margin-top: 60px;}
-.titleR li {float:right;
-            margin-left: 20px;
-            margin-top: 60px;}
-.titleR li p {color:#fff;}
-.titleL p {color:#fff;
-           font-size: 40px;}
-.titleL p:nth-child(2){font-size:50px;
-                       font-weight: 600; }
+
+
 
 #contents .container {width: 1200px;
                       margin: 0 auto;
-                      background: #fff;}
+                      background: #fff;
+                      margin-top: -60px;}
 #contents .container>ul>li
-/* 나중에 ul li를 사용할 수 있어서 > */ 
+/* 나중에 ul li를 사용할 수 있어서 > */
                           {float:left;
                            width: 25%;
                            height: 225px;}
