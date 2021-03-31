@@ -105,12 +105,12 @@
                   position: absolute;
                   width: 400px;
                   top:70px;
-                  left:100px}
+                  left:90px}
 .slider .txtWrap p {font-size: 60px;
                     color:#1651b7;
                    font-weight:bold;}
 .slider .txtWrap a {color:white;
-                    font-size:15px;
+                    font-size:14px;
                     text-align: center;}
 .slider .txtWrap .btn {
                       display: block;
@@ -119,3 +119,25 @@
                       border: 1px solid #192d4e;
                       background: #192d4e;
                       margin-top: 20px;}
+.container {.position: relative;}
+.container .txtTwo {position: absolute;
+                   .background: skyblue;
+                   width: 300px;
+                   bottom:130px;}
+.container .txtTwo h1 {font-size:35px;
+                       text-align: left;
+                       margin-bottom: 20px;
+                       color:white;}
+.container .txtTwo p {font-size:16px;
+                      margin-bottom: 20px;
+                      color:white;}
+
+.container .txtTwo .btnTwo {display:block;
+                           width: 170px;
+                           line-height: 40px;
+                           border: 1px solid #fff;
+                           background: rgba(0,0,0,0.5);}
+
+.container .txtTwo  a {color:white;
+                       font-size: 14px;
+                       text-align: center;}
