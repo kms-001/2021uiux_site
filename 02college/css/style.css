@@ -123,14 +123,14 @@
 .container .txtTwo {position: absolute;
                    .background: skyblue;
                    width: 300px;
-                   bottom:130px;
+                   bottom:70px;
                    margin-left:30px;}
 .container .txtTwo h1 {font-size:35px;
                        text-align: left;
-                       margin-bottom: 20px;
+                       margin-bottom: 30px;
                        color:white;}
 .container .txtTwo p {font-size:16px;
-                      margin-bottom: 20px;
+                      margin-bottom: 40px;
                       color:white;}
 
 .container .txtTwo .btnTwo {display:block;
@@ -142,3 +142,18 @@
 .container .txtTwo  a {color:white;
                        font-size: 14px;
                        text-align: center;}
+
+.container .hot {width: 300px;}
+.container .hot p {font-size:25px;
+                   color:white;
+                   font-weight: blod;
+                   padding-top:20px;
+                   padding-left:20px;}
+.container .hot .hotTxT li  {float:left;}
+.container .hot .hotTxT img {padding-top:35px;
+                             padding-right: 20px;}
+.container .hot .hotTxT li:nth-child(1) {padding-left:40px;}
+.container .hot .hotTxT p {font-size:14px;
+                          text-align: center;
+                          padding-top:5px;
+                          margin-left: -40px;}
