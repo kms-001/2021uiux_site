@@ -171,7 +171,7 @@
                           height: 2px;
                           background: #d2d2d2;
                           margin-top: 10px;}
-.container .noteTxt li {font-size: 14px;
+.container .noteTxt li  {font-size: 14px;
                        color:white;
                        padding-left: 20px;
                        padding-bottom: 15px;}
@@ -214,7 +214,7 @@
         background: white;
         position: relative;}
 
-.footer .footerMenu {width:900px;
+.footer .footerMenu {width:800px;
                      margin: 0 auto;}
 
 .footer .footerMenu li {float:left;
