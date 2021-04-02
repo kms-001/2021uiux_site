@@ -252,7 +252,8 @@
 .footer .footerMenu li {float:left;
                        padding-top:20px;
                        padding-right: 20px;}
-.footer .footerMenu li a {padding-right: 5px;}
+.footer .footerMenu li a {padding-right: 5px;
+                          line-height: 20px;}
 .footer .footerMenu li:last-child {padding-right:0;}
 .footer .footerMenu li:after {content:"";
                               position: absolute;
