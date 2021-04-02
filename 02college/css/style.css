@@ -122,7 +122,7 @@
 .container {.position: relative;}
 .container .txtTwo {position: absolute;
                    .background: skyblue;
-                   width: 300px;
+                   width: 25%;
                    bottom:120px;
                    margin-left:30px;}
 .container .txtTwo h1 {font-size:35px;
@@ -178,10 +178,31 @@
 .container .noteTxt li span {padding-left: 10px;}
 
 /* SNS NEWS */
+.snsNews {width: 300px;}
+.snsNews > P {font-size:20px;
+            font-weight: bold;
+            padding-top:20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            color:#03173c;}
+.snsNews .sns {margin-left:20px;}
 
+.snsTxt p {font-size:14px;
+          position: relative;
+           right:-130px;
+           top:-90px;}
+.snsicon {position: relative;
+          top:-60px;
+          left:150px;}
 
 
 /* 캠퍼스 투어 */
+.tour {width: 300px;}
+.tourTxt {width: 300px;
+          background: rgba(0,0,0,0.8);
+          position: relative;}
+.tourTxt p {top:30px;}        
+
 
 
 /*신입생 모집*/
