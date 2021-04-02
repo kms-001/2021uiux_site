@@ -42,7 +42,9 @@
           right: 0;
           top:20px;}
 .nav .navRight li {display: inline;}
-.nav .navRight li img {float:right;}
+.nav .navRight li img {float:right;
+                       position: relative;
+                       bottom:10px;}
 .nav .navRight li a {margin-left:50px;
                      color:#474747;}
 
@@ -192,16 +194,26 @@
            right:-130px;
            top:-90px;}
 .snsicon {position: relative;
-          top:-60px;
+          top:-65px;
           left:150px;}
 
 
 /* 캠퍼스 투어 */
-.tour {width: 300px;}
-.tourTxt {width: 300px;
-          background: rgba(0,0,0,0.8);
-          position: relative;}
-.tourTxt p {top:30px;}        
+.tourTxt p {position: relative;
+            background:rgba(0,0,0,0.8);
+            bottom:54px;
+            line-height: 50px;
+            color:white;
+            text-align: center;
+            font-weight: bold}
+
+
+/* 영상 */
+.playbtn img {width: 80px;
+              height: 80px;
+              position: relative;
+              top:-150px;
+              left:110px;}
 
 
 
@@ -234,13 +246,13 @@
         height: 165px;
         background: white;
         position: relative;}
-
 .footer .footerMenu {width:800px;
-                     margin: 0 auto;}
-
+                     margin: 0 auto;
+                     margin-bottom: 10px;}
 .footer .footerMenu li {float:left;
                        padding-top:20px;
                        padding-right: 20px;}
+.footer .footerMenu li a {padding-right: 5px;}
 .footer .footerMenu li:last-child {padding-right:0;}
 .footer .footerMenu li:after {content:"";
                               position: absolute;
@@ -250,3 +262,13 @@
                               top:25px;}
 .footer .footerMenu li:last-child::after {content: "";
                                           display: none;}
+.footer .foterTxt {width: 800px;
+                  margin: 0 auto;
+                  margin-bottom: 10px;}
+.footer .foterTxt li {font-size:14px;
+                      color:#898989;}
+.footer .copy {width: 800px;
+              margin: 0 auto;}
+.footer .copy p {font-style: italic;
+                font-size:14px;
+                color:#898989;}
