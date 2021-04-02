@@ -100,6 +100,7 @@
 #contents .container>ul>li:nth-child(7){}
 #contents .container>ul>li:nth-child(8){width: 75%;}
 
+/* 1 */
 .sliderWrap {position: relative;}
 .bx-wrapper {box-shadow: none;
              border: none;}
@@ -128,6 +129,8 @@
                     cursor: pointer;}
 .nextBtn {left:0;}
 .prevBtn {right:0;}
+
+/* 2 */
 .container {.position: relative;}
 .container .txtTwo {position: absolute;
                    .background: skyblue;
@@ -151,6 +154,7 @@
 .container .txtTwo  a {color:white;
                        font-size: 14px;
                        text-align: center;}
+
 /* HOT LINK */
 .container .hot {width: 300px;}
 .container .hot p {font-size:20px;
@@ -166,6 +170,7 @@
                           text-align: center;
                           padding-top:5px;
                           margin-left: -40px;}
+
 /*공지사항 */
 .container .note {width: 300px;}
 .container .note > p {font-size:20px;
@@ -195,7 +200,6 @@
             padding-bottom: 20px;
             color:#03173c;}
 .snsNews .sns  {padding:0 20px;}
-
 .snsTxt p {font-size:14px;
           position: relative;
           right:-130px;
@@ -203,7 +207,6 @@
 .snsicon {position: relative;
           top:-65px;
           left:150px;}
-
 
 /* 캠퍼스 투어 */
 .tourTxt p {position: relative;
@@ -214,15 +217,12 @@
             text-align: center;
             font-weight: bold}
 
-
 /* 영상 */
 .playbtn img {width: 80px;
               height: 80px;
               position: relative;
               top:-150px;
               left:110px;}
-
-
 
 /*신입생 모집*/
 .sliderTwrap {position: relative;}
@@ -246,7 +246,6 @@
 .sliderTwrap .txtTwrp  a {color:white;
                          font-size: 14px;
                          text-align: center;}
-
 
 /* 푸터 */
 .footer {width: 100%;
