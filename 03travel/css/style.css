@@ -1,34 +1,54 @@
 @charset "utf-8";
 
-#wrap {width: 1900px;
-      height: 90px;
-      background: #0d72a6;
+.wrap {width: 100%;
+      background: #0765A3;
       margin: 0 auto;}
-
 .headerWrap {width: 1200px;
+            height: 90px;
             margin: 0 auto;
-            background: url(../images/header.jpg)no-repeat;}
-
+            background:url(../images/header.jpg)no-repeat;}
 .header {width: 980px;
-         margin: 0 auto;
-         position: relative;}
+        margin: 0 auto;}
 
-.header .logo img {padding-top: 25px;}
-.header .logo h1, p {position: relative;
-            left:40px; bottom:50px;
-            color:white;}
+.header .logo {float:left;
+               padding-top: 30px;}
+.header .logoTxt {float:left;
+                  padding-left: 10px;
+                  padding-top: 15px;}
+.header .logoTxt  h2{color:white;
+                    text-align: center;
+                    padding-top: 5px;}
+.header .logoTxt  p{color:white;
+                    font-size:12px;
+                    letter-spacing: 3px;
+                    text-align: center;}
 
 .header .search {display: block;
                 border: 1px solid white;
-                width: 290px;
-                line-height: 20px;
+                width: 293px;
+                line-height: 30px;
                 border-radius: 20px;
                 background: white;
-                position: absolute;
-                top:25px;
-                left:300px;}
+                float: left;
+                margin-left: 100px;
+                margin-top: 30px;}
 
-.header .search p {color:black;
-                  top:20px;}
-.header .search img {position: absolute;
-                    right:40px}
+.header .search label {font-size:14px;
+               font-weight: bold;
+               padding-left: 15px;}
+.header .search input {width: 170px;
+               border:0 none;
+               padding-left: 10px;}
+.header .search img {padding-left: 5px;}
+
+.header .snsWrap {float:right;
+                  padding-top: 32px;}
+.header .number {float:right;
+                 color:white;
+                 font-size:30px;
+                 font-weight:bold;
+                 padding-top: 22px;
+                 padding-right: 20px;}
+
+.navWrap {width: 100%;
+          background: skyblue;}
