@@ -50,5 +50,15 @@
                  padding-top: 22px;
                  padding-right: 20px;}
 
-.navWrap {width: 100%;
-          background: skyblue;}
+.gnbWrap {width: 100%;
+          background: #f8f8f8;
+          border-bottom: 5px solid #0765A3;}
+.gnbWrap .gnbmenu {width: 1200px;
+                   margin: 0 auto;}
+.gnbWrap .gnbmenu li {float:left;
+                      width:calc(1200px / 6);
+                      border-left: 1px solid #e8e8e8;}
+.gnbWrap .gnbmenu li:last-child {border-right:1px solid #e8e8e8; }
+.gnbWrap .gnbmenu li a {line-height: 60px;
+                        display: block;
+                        text-align: center;}
