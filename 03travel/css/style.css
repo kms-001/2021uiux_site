@@ -85,3 +85,14 @@
 .container .contents .mainTxt p {font-size: 30px;}
 .container .contents .mainTxt h1,
 .container .contents .mainTxt p {color:#18252e}
+
+
+/* banner */
+.container .contents .bannerBox {width:234px;
+                                 height: 50px;                                
+                                 background: #152630;}
+.container .contents .bannerBox li {float:left;}
+.container .contents .bannerBox li a {color:white;
+                                      line-height: 50px;
+                                      padding-right: 10px;}
+.container .contents .bannerBox li a:first-child {padding-left: 15px}
