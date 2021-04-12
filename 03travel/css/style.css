@@ -65,34 +65,93 @@
                         text-align: center;
                         font-weight: bold;}
 
+/* formWrap */
+.formWrap {width:980px;
+           margin: 0 auto;
+           .background: skyblue;
+           position: relative;}
+
+.formWrap form {width: 480px; height: 300px; background: white;
+                padding-left:160px; padding-top: 25px; font-size:14px;}
+.formWrap fieldset{border:0 none;}
+.formWrap legend {position: absolute;
+                  left: 0; top: -9999px;}
+
+.formWrap #golo {width: 275px; height: 30px; margin-bottom: 20px;  margin-top: 5px;}
+.formWrap #sdate, .formWrap #edate {width: 125px; height: 30px; margin-top:15px;}
+.sdate {position: absolute; top: 85px; }
+.edate {position: absolute; top:85px; padding-left: 25px}
+.formWrap #sdate {float:left; margin-bottom: 20px; }
+.formWrap #edate {float:left; margin-left: 25px;}
+.formWrap #cgrade {width: 115px; height: 30px; float:left; margin-top: 15px;}
+.formWrap #num1,
+.formWrap #num2 {width: 65px; height: 30px; float:right;
+                margin-top: 15px;}
+.formWrap #num1 {margin-right: 50px;}
+.formWrap #num2 {margin-right: 5px}
+.cgrade, .adult, .child {position: absolute; top:140px;padding-top: 10px;}
+.adult {padding-left: 20px}
+.child {padding-left: 90px;}
+
+button {width: 275px; height:35px;
+       border:0 none;
+       background: #EA4F1F;
+       border-radius: 5px;
+       margin-top:20px;
+       color:white; font-weight: bold;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;}
+button img {padding-right: 5px;}
+
+.sliderTab {background: #0099CB;
+            position: absolute;
+            width: 132px;
+            height: 300px;
+            top:0;}
+
+.sliderTab a {display: flex;
+             justify-content: center;
+             align-items: center;
+             height:calc(300px /4);
+             font-size: 12px;
+             font-weight: 600;
+             color:white;}
+.sliderTab img{padding-right: 5px;}
+
+
+
 /* contents */
 .container {width: 100%;
             height: 1238px;
-            background: url(../images/mainbg.png)no-repeat;}
+            background: url(../images/mainbg.png)no-repeat;
+            padding-top:60px;}
 .container .contents {width: 980px;
                       margin: 0 auto;}
-.container .contents .mainTxt {float: right;
-                               padding-top: 90px;}
-.container .contents .mainTxt h1 {font-size: 72px;}
+.container .contents .mainTxt {position: absolute;
+                               top:200px;
+                               right:300px}
+.container .contents .mainTxt h1 {font-size: 70px;}
 .container .contents .mainTxt h1:after{content:"";
                                       display: block;
-                                      width: 100px;
+                                      width: 90px;
                                       height: 5px;
                                       background: #18252e;
                                       margin-left:290px;
                                       margin-top: -5px;
                                       margin-bottom: 10px;}
-.container .contents .mainTxt p {font-size: 30px;}
+.container .contents .mainTxt p {font-size: 28px;}
 .container .contents .mainTxt h1,
 .container .contents .mainTxt p {color:#18252e}
 
 
 /* banner */
-.container .contents .bannerBox {width:234px;
-                                 height: 50px;                                
-                                 background: #152630;}
-.container .contents .bannerBox li {float:left;}
-.container .contents .bannerBox li a {color:white;
-                                      line-height: 50px;
-                                      padding-right: 10px;}
-.container .contents .bannerBox li a:first-child {padding-left: 15px}
+.banner01, .banner02 {padding-top: 15px; position: relative;}
+.bannerBox {width: 234px; height: 50px; background: #152630;
+            display: flex; justify-content: center; align-items: center;
+            position: absolute; bottom:4px; }
+.bannerBox a { color:white; float:left; padding-left: 15px; font-weight: bold}
+.bannerBox li:nth-child(1) a {padding-left: 0;}
+.bannerBox li:nth-child(2) a {color:#539554;}
+.banner02 {position:absolute; bottom:153px; left:505px; margin-left: 15px;}
