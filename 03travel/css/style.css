@@ -71,7 +71,7 @@
            .background: skyblue;
            position: relative;}
 
-.formWrap form {width: 480px; height: 300px; background: white;
+.formWrap form {width: 483px; height: 300px; background: white;
                 padding-left:160px; padding-top: 25px; font-size:14px;}
 .formWrap fieldset{border:0 none;}
 .formWrap legend {position: absolute;
