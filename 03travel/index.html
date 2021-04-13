@@ -5,36 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TRAVEL himedia</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script>
+
+
+  </script>
 </head>
 <body>
   <div class="wrap"> <!-- 1900 -->
     <header class="headerWrap">
+
       <div class="header clearfix">
         <div class="logo">
           <a href="#"><img src="images/travel_logo.png" alt="비행기"></a>
-        </div>
         <div class="logoTxt">
           <a href="#"><h2>TRAVEL</h2></a>
           <a href="#"><p>하이미디어</p></a>
         </div>
+        </div>
+
         <div class="search">
           <label for="usearch">SEARCH</label>
           <input type="text" id="usearch" name="user-search" placeholder="검색어를 입력하세요.">
           <a href="#"><img src="images/Vector.png" alt="검색"></a>
         </div>
-        <div class="snsWrap">
-          <a href="#"><img src="images/snsicon1.png" alt=""></a>
-          <a href="#"><img src="images/snsicon2.png" alt=""></a>
-          <a href="#"><img src="images/snsicon3.png" alt=""></a>
-          <a href="#"><img src="images/snsicon4.png" alt=""></a>
+
+        <div class="etcWrap">
+          <div class="call">
+            <p>+82 02 1234 5678</p>
+          </div>
+          <div class="sns">
+            <a href="#"><img src="images/snsicon1.png" alt=""></a>
+            <a href="#"><img src="images/snsicon2.png" alt=""></a>
+            <a href="#"><img src="images/snsicon3.png" alt=""></a>
+            <a href="#"><img src="images/snsicon4.png" alt=""></a>
+          </div>
         </div>
-        <div class="number">
-          <p>+82 02 1234 5678</p>
-        </div>
-      </div>
+    </div> <!-- class="header" -->
     </header>
+
+
     <div class="gnbWrap">
         <nav class="gnbmenu">
             <ul class="clearfix">
@@ -46,92 +60,78 @@
                 <li><a href="#">커뮤니티</a></li>
             </ul>
         </nav>
-    </div>
+    </div> <!-- class="gnbWrap" -->
+
     <div class="container">
-      <div class="formWrap">
-        <form>
-          <fieldset>
-            <legend>여행일정</legend>
-            <ul>
-              <li>
-                <label for="golo">가고싶은 나라를 선택하세요.</label>
-                <select name="golo" id="golo">
-                  <option value="">선택하세요</option>
-                  <option value="미국">미국</option>
-                  <option value="일본">일본</option>
-                  <option value="중국">중국</option>
-                </select>
-              </li>
-              <li class="clearfix">
-                <div>
-                  <label for="sdate" class="sdate">출발일</label>
-                  <input type="date" id="sdate" >
-                </div>
-                <div>
-                  <label for="edate"  class="edate">도착일</label>
-                  <input type="date" id="edate" >
-                </div>
-              </li>
-              <li class="clearfix">
-                <div>
-                  <label for="cgrade" class="cgrade">좌석등급</label>
-                  <select name="cgrade" id="cgrade">
-                    <option value="비지니스">비지니스</option>
-                    <option value="이코노미">이코노미</option>
-                    </select>
-                </div>
-                <div>
-                  <label for="num1" class="adult">성인</label>
-                  <input type="number" id="num1" placeholder="1">
-                </div>
-                <div>
-                  <label for="num2" class="child">아이</label>
-                  <input type="number" id="num2" placeholder="1">
-                </div>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="button" name="button">
-            <img src="images/Vector2.png" alt="">검색하기</button>
-        </form>
-
-        <div class="sliderTab">
+      <div class="content"> <!-- 980px -->
+        <div class="contentLeft">
+          <div class="sliderTab">
           <ul>
-            <li><a href="#" id=""> <img src="images/search_icon1.png" alt="">공항예약</a></li>
-            <li><a href="#" id=""> <img src="images/search_icon2.png" alt="">숙소예약</a></li>
-            <li><a href="#" id=""> <img src="images/search_icon3.png" alt="">렌트카예약</a></li>
-            <li><a href="#" id=""> <img src="images/search_icon4.png" alt="">휴양지</a></li>
+            <li><a href="#"> <img src="images/search_icon1.png" alt="">공항예약</a></li>
+            <li><a href="#"> <img src="images/search_icon2.png" alt="">숙소예약</a></li>
+            <li><a href="#"> <img src="images/search_icon3.png" alt="">렌트카예약</a></li>
+            <li><a href="#"> <img src="images/search_icon4.png" alt="">휴양지</a></li>
           </ul>
-        </div>
-      </div>
-
-      <div class="contents">
-      <div class="mainTxt">
-        <h1>TRAVEL GO</h1>
-        <p>지금, 여행이 떠나고 싶다면? <br> 하이미디어와 여행을 떠나자!</p>
-      </div>
-      <div class="banner01">
-          <a href="#"><img src="images/banner09.png" alt=""></a>
-        <div >
-          <ul class="clearfix bannerBox">
-          <li><a href="#">프랑스</a></li>
-          <li><a href="#">￦1,900,000~</a></li>
-          <li><a href="#">></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="banner02">
-          <a href="#"><img src="images/banner01.png" alt=""></a>
-        <div >
-          <ul class="clearfix bannerBox">
-          <li><a href="#">일본</a></li>
-          <li><a href="#">￦890,000~</a></li>
-          <li><a href="#">></a></li>
-          </ul>
-        </div>
-      </div>
-      </div>
+        </div> <!-- sliderTab -->
+        <div class="formWrap">
+          <form>
+            <fieldset>
+              <legend>여행일정</legend>
+              <ul>
+                <li>
+                  <label for="golo">가고싶은 나라를 선택하세요.</label>
+                  <select name="golo" id="golo">
+                    <option value="">선택하세요</option>
+                    <option value="미국">미국</option>
+                    <option value="일본">일본</option>
+                    <option value="중국">중국</option>
+                  </select>
+                </li>
+                <li class="clearfix">
+                  <div>
+                    <label for="sdate" class="sdate">출발일</label>
+                    <input type="date" id="sdate" >
+                  </div>
+                  <div>
+                    <label for="edate"  class="edate">도착일</label>
+                    <input type="date" id="edate" >
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div>
+                    <label for="cgrade" class="cgrade">좌석등급</label>
+                    <select name="cgrade" id="cgrade">
+                      <option value="비지니스">비지니스</option>
+                      <option value="이코노미">이코노미</option>
+                      </select>
+                  </div>
+                  <div>
+                    <label for="num1" class="adult">성인</label>
+                    <input type="number" id="num1" placeholder="1">
+                  </div>
+                  <div>
+                    <label for="num2" class="child">아이</label>
+                    <input type="number" id="num2" placeholder="1">
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="button" name="button">
+              <img src="images/Vector2.png" alt="">검색하기</button>
+          </form>
     </div>
-  </div>
+    </div><!-- contentLeft -->
+
+        <div class="contentRight">
+          <div class="mainTxt">
+         <h1>TRAVEL GO</h1>
+         <p>지금, 여행이 떠나고 싶다면? <br> 하이미디어와 여행을 떠나자!</p>
+         </div>
+         <a href="#"><img src="images/02.png" alt=""></a>
+        </div>
+     <!-- content -->
+  </div> <!-- class="wrap" -->
+</div>
+</div>
 </body>
 </html>

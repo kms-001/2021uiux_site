@@ -10,20 +10,19 @@
 .header {width: 980px;
         margin: 0 auto;}
 
-/* header */
+/* 로고 */
 .header .logo {float:left;
-               padding-top: 30px;}
-.header .logoTxt {float:left;
-                  padding-left: 10px;
-                  padding-top: 15px;}
-.header .logoTxt  h2{color:white;
-                    text-align: center;
-                    padding-top: 5px;}
-.header .logoTxt  p{color:white;
-                    font-size:12px;
-                    letter-spacing: 3px;
-                    text-align: center;}
+               padding-top: 20px;}
+.header .logo .logoTxt {float:right;
+                        padding-left: 10px; }
+.header .logo .logoTxt  h2{color:white;
+                           text-align: center;}
+.header .logo .logoTxt  p{color:white;
+                          font-size:12px;
+                          letter-spacing: 3px;
+                          text-align: center;}
 
+/* 검색 */
 .header .search {display: block;
                 border: 1px solid white;
                 width: 293px;
@@ -41,16 +40,16 @@
                padding-left: 10px;}
 .header .search img {padding-left: 5px;}
 
-.header .snsWrap {float:right;
-                  padding-top: 32px;}
-.header .number {float:right;
-                 color:white;
-                 font-size:30px;
-                 font-weight:bold;
-                 padding-top: 22px;
-                 padding-right: 20px;}
+.etcWrap .call {float:left;
+                color:white;
+                font-size:25px;
+                font-weight: bold;
+                padding-top: 25px;
+                padding-left: 120px;}
+.etcWrap .sns {float:right;
+               padding-top: 30px;}
 
-/* gnb */
+/* 메뉴 */
 .gnbWrap {width: 100%;
           background: #f8f8f8;
           border-bottom: 5px solid #0765A3;}
@@ -64,101 +63,31 @@
                         display: block;
                         text-align: center;
                         font-weight: bold;}
+.gnbWrap .gnbmenu li:hover a {color:#2B71AB;}
 
-/* formWrap */
-.formWrap {width:980px;
-           margin: 0 auto;
-           .background: skyblue;
-           position: relative;}
-
-.formWrap form {width: 483px; height: 300px; background: white;
-                padding-left:160px; padding-top: 25px; font-size:14px;}
-.formWrap fieldset{border:0 none;}
-.formWrap legend {position: absolute;
-                  left: 0; top: -9999px;}
-
-.formWrap #golo {width: 275px; height: 30px; margin-bottom: 20px;  margin-top: 5px;}
-.formWrap #sdate, .formWrap #edate {width: 125px; height: 30px; margin-top:15px;}
-.sdate {position: absolute; top: 85px; }
-.edate {position: absolute; top:85px; padding-left: 25px}
-.formWrap #sdate {float:left; margin-bottom: 20px; }
-.formWrap #edate {float:left; margin-left: 25px;}
-.formWrap #cgrade {width: 115px; height: 30px; float:left; margin-top: 15px;}
-.formWrap #num1,
-.formWrap #num2 {width: 65px; height: 30px; float:right;
-                margin-top: 15px;}
-.formWrap #num1 {margin-right: 50px;}
-.formWrap #num2 {margin-right: 5px}
-.cgrade, .adult, .child {position: absolute; top:140px;padding-top: 10px;}
-.adult {padding-left: 20px}
-.child {padding-left: 90px;}
-
-button {width: 275px; height:35px;
-       border:0 none;
-       background: #EA4F1F;
-       border-radius: 5px;
-       margin-top:20px;
-       color:white; font-weight: bold;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       cursor: pointer;}
-button img {padding-right: 5px;}
-
-.sliderTab {background: #0099CB;
-            position: absolute;
-            width: 132px;
-            height: 300px;
-            top:0;}
-
-.sliderTab a {display: flex;
-             justify-content: center;
-             align-items: center;
-             height:calc(300px /4);
-             font-size: 12px;
-             font-weight: 600;
-             color:white;}
-.sliderTab img{padding-right: 5px;}
-
-
-
-/* contents */
+/* 본문 */
 .container {width: 100%;
             height: 1238px;
-            background: url(../images/mainbg.png)no-repeat;
-            padding-top:60px;}
-.container .contents {width: 980px;
-                      margin: 0 auto;
-                      position: relative;}
-.container .contents .mainTxt {position: absolute;
-                               top:-300px; left:520px}
-.container .contents .mainTxt h1 {font-size: 70px;}
-.container .contents .mainTxt h1:after{content:"";
-                                      display: block;
-                                      width: 90px;
-                                      height: 5px;
-                                      background: #18252e;
-                                      margin-left:290px;
-                                      margin-top: -5px;
-                                      margin-bottom: 10px;}
-.container .contents .mainTxt p {font-size: 28px;}
-.container .contents .mainTxt h1,
-.container .contents .mainTxt p {color:#18252e}
+            background: url(../images/mainbg.png)no-repeat;}
 
+.content {width: 980px;
+          margin: 0 auto;
+          background: pink;}
 
-/* banner 첫번째줄 */
-.banner01 {padding-top: 15px; position: relative;}
-.banner01 .bannerBox {width: 234px; height: 50px; background: #152630;
-            display: flex; justify-content: center; align-items: center;
-            position: absolute; bottom:4px; }
-.banner01 .bannerBox a { color:white; float:left; padding-left: 15px; font-weight: bold}
-.banner01 .bannerBox li:nth-child(1) a {padding-left: 0;}
-.banner01 .bannerBox li:nth-child(2) a {color:#539554;}
+.content .contentLeft {float:left;}
+.content .contentLeft .formWrap {float:right;}
+.content .contentRight {float:right;}
 
-.banner02 {position: absolute; top:15px; left:234px; margin-left: 15px;}
-.banner02 .bannerBox {width: 234px; height: 50px; background: #152630;
-            display: flex; justify-content: center; align-items: center;
-            position: absolute; bottom:4px; }
-.banner02 .bannerBox a { color:white; float:left; padding-left: 15px; font-weight: bold}
-.banner02 .bannerBox li:nth-child(1) a {padding-left: 0;}
-.banner02 .bannerBox li:nth-child(2) a {color:#539554;}
+.sliderTab {width: 130px; height: 300px; background: #0099CB; float:left;}
+.sliderTab li {height: calc(300px / 4);
+               display: flex;
+               justify-content: center;
+               align-items: center;}
+.sliderTab li:nth-child(1) {background: #fff;}
+.sliderTab li:nth-child(2) {background: #006599;}
+.sliderTab li a {display: block; color:#fff;}
+.sliderTab li:first-child a {color:#000;}
+
+.formWrap {width: 350px; height: 300px; background: #fff;}
+.formWrap fieldset {border: 0 none;}
+.formWrap legend {position: absolute; top:0; left:-9999px}
