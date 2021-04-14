@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.wrap {width: 100%;
+      background: #0765A3;
+      margin: 0 auto;}
+.headerWrap {width: 1200px;
+            height: 90px;
+            margin: 0 auto;
+            background:url(../images/header.jpg)no-repeat;}
+.header {width: 980px;
+        margin: 0 auto;}
+
+/* 로고 */
+.header .logo {float:left;
+               padding-top: 20px;}
+.header .logo .logoTxt {float:right;
+                        padding-left: 10px; }
+.header .logo .logoTxt  h2{color:white;
+                           text-align: center;}
+.header .logo .logoTxt  p{color:white;
+                          font-size:12px;
+                          letter-spacing: 3px;
+                          text-align: center;}
+
+/* 검색 */
+.header .search {display: block;
+                border: 1px solid white;
+                width: 293px;
+                line-height: 30px;
+                border-radius: 20px;
+                background: white;
+                float: left;
+                margin-left: 100px;
+                margin-top: 30px;}
+.header .search label {font-size:14px;
+               font-weight: bold;
+               padding-left: 15px;}
+.header .search input {width: 170px;
+               border:0 none;
+               padding-left: 10px;}
+.header .search img {padding-left: 5px;}
+
+/* 전화번호 & sns */
+.header .call {float:left;
+              color:white;
+              font-size:25px;
+              font-weight: bold;
+              padding-top: 25px;
+              padding-left: 120px;}
+.header .sns {float:right;
+              padding-top: 30px;}
+
+
+/* 메뉴 */
+.gnbWrap {width: 100%;
+          background: #f8f8f8;
+          border-bottom: 5px solid #0765A3;}
+.gnbWrap .gnbmenu {width: 980px;
+                   margin: 0 auto;}
+.gnbWrap .gnbmenu li {float:left;
+                      width:calc(980px / 6);
+                      border-left: 1px solid #e8e8e8;}
+.gnbWrap .gnbmenu li:last-child {border-right:1px solid #e8e8e8; }
+.gnbWrap .gnbmenu li a {line-height: 60px;
+                        display: block;
+                        text-align: center;
+                        font-weight: bold;}
+.gnbWrap .gnbmenu li:hover a {color:#2B71AB;}
+.gnbWrap .gnbmenu li .on {color:#2B71AB;}
+
+
+.container {width: 100%;
+            height: 1238px;
+            background: url(../images/mainbg.png)no-repeat;}
+
+.content01 {width: 980px;
+          margin: 0 auto;
+          position: relative;
+          padding-top: 60px;}
+
+.slider {width: 132px;
+         height: 300px;
+         background: skyblue;
+         float:left;}
+.slider li {height: calc(300px / 4);}
+.slider li:nth-child(2) {background: #006599;}
+.slider li:nth-child(3) {background: #0099CB;}
+.slider li:nth-child(4) {background: #0099CB;}
+.slider li a {display: block;
+               text-align: center;
+               line-height: 35px;}
+
+.formWrap {width: 351px;
+           height: 300px;
+           background: #fff;
+           float:left;}
+
+.mainTxt {float:right}
+.mainTxt h3 {font-size: 60px; }
+.mainTxt p {font-size: 30px; letter-spacing:-4px;}
