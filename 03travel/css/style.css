@@ -40,14 +40,15 @@
                padding-left: 10px;}
 .header .search img {padding-left: 5px;}
 
-.etcWrap .call {float:left;
-                color:white;
-                font-size:25px;
-                font-weight: bold;
-                padding-top: 25px;
-                padding-left: 120px;}
-.etcWrap .sns {float:right;
-               padding-top: 30px;}
+/* 전화번호 & sns */
+.header .call {float:left;
+              color:white;
+              font-size:25px;
+              font-weight: bold;
+              padding-top: 25px;
+              padding-left: 120px;}
+.header .sns {float:right;
+              padding-top: 30px;}
 
 /* 메뉴 */
 .gnbWrap {width: 100%;
@@ -64,6 +65,7 @@
                         text-align: center;
                         font-weight: bold;}
 .gnbWrap .gnbmenu li:hover a {color:#2B71AB;}
+.gnbWrap .gnbmenu li .on {color:#2B71AB;}
 
 /* 본문 */
 .container {width: 100%;
@@ -72,22 +74,58 @@
 
 .content {width: 980px;
           margin: 0 auto;
-          background: pink;}
+          background: pink;
+          position: relative;}
 
-.content .contentLeft {float:left;}
-.content .contentLeft .formWrap {float:right;}
-.content .contentRight {float:right;}
+.contentLeft {float:left;
+              padding-top: 60px;}
+.contentLeft .slider {width: 132px;
+                      height: 300px;
+                      background: skyblue;
+                      float:left;}
+.contentLeft .slider li {height: calc(300px / 4);}
+.contentLeft .slider li:nth-child(2) {background: #006599;}
+.contentLeft .slider li:nth-child(3) {background: #0099CB;}
+.contentLeft .slider li:nth-child(4) {background: #0099CB;}
+.contentLeft .slider li a {display: block;
+                          text-align: center;
+                          line-height: 35px;}
+.contentLeft .formWrap {width: 351px;
+                        height: 300px;
+                        background: #fff;
+                        float:right;}
+.contentRight {float:right;
+               padding-top: 60px;
+               position: relative;}
+.contentRight .mainTxt {padding-right: 110px}
+.contentRight .mainTxt h3 {font-size: 60px; }
+.contentRight .mainTxt p {font-size: 30px; letter-spacing:-4px;}
+.contentRight .balloon {width: 750px; height: 533px;
+                        background: url(../images/02.png) no-repeat;
+                        position: absolute; top:150px; right: -80px;
+                        opacity: 0.7;}
 
-.sliderTab {width: 130px; height: 300px; background: #0099CB; float:left;}
-.sliderTab li {height: calc(300px / 4);
-               display: flex;
-               justify-content: center;
-               align-items: center;}
-.sliderTab li:nth-child(1) {background: #fff;}
-.sliderTab li:nth-child(2) {background: #006599;}
-.sliderTab li a {display: block; color:#fff;}
-.sliderTab li:first-child a {color:#000;}
+/*  본문 중앙 */
 
-.formWrap {width: 350px; height: 300px; background: #fff;}
-.formWrap fieldset {border: 0 none;}
-.formWrap legend {position: absolute; top:0; left:-9999px}
+
+/* 배너 */
+
+.banner01 {float:left; position: relative; top:15px;}
+.banner01 .bTxt01 {width: 234px; height: 50px; background: #152630;
+                      position: absolute; bottom: 4px; display: flex;
+                      justify-content: center; align-items: center;}
+.banner01 .bTxt01 p {float:left; color:#fff;
+                        padding-left: 20px; font-weight: bold}
+.banner01 .bTxt01 p:nth-child(1) {padding-left: 0;}
+.banner01 .bTxt01 p:nth-child(2) {color:#539554}
+
+.banner02 {float:left; position: relative; top:15px; left:15px; z-index: 1;}
+.banner02 .bTxt02 {width: 234px; height: 50px; background: #152630;
+                      position: absolute; bottom: 4px; display: flex;
+                      justify-content: center; align-items: center;}
+.banner02 .bTxt02 p {float:left; color:#fff;
+                        padding-left: 20px; font-weight: bold}
+.banner02 .bTxt02 p:nth-child(1) {padding-left: 0; padding-right: 30px;}
+.banner02 .bTxt02 p:nth-child(2) {color:#539554}
+
+/* 푸터 */
