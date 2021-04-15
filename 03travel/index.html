@@ -11,8 +11,12 @@
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script>
-
-
+  $(document).ready(function(){
+      var mySlider = $(".bSlider").bxSlider({
+        pager:false,
+        });
+        $(".bSlider1").bxSlider();
+      });
   </script>
 </head>
 <body>
@@ -87,7 +91,7 @@
 
           <div class="bannerWrap clearfix">
               <div class="banner">
-                <img src="images/banner09.png" alt="프랑스">
+                <img src="images/banner1.png" alt="프랑스">
                 <div class="bTxt">
                   <p>프랑스</p>
                   <p>￦1,900,000</p>
@@ -95,7 +99,7 @@
                 </div>
               </div>
               <div class="banner">
-                <img src="images/banner01.png" alt="일본">
+                <img src="images/banner2.png" alt="일본">
                 <div class="bTxt">
                   <p>일본</p>
                   <p>￦980,000</p>
@@ -111,21 +115,64 @@
             <p>지금, 여행이 떠나고 싶다면?</p>
             <p>하이미디어와 여행을 떠나자!</p>
           </div>
-          <div class="balloon">
-          </div>
+          <div class="balloon"> </div>
         </div> <!-- contentRight -->
   </div>
-  <div class="bannerTwo">
-    <div class="slider">
-      <img src="images/banner08.png" alt="일본">
-    </div>
-    <div class="slider">
-      <img src="images/banner07.png" alt="일본">
-    </div>
-    </div>
-  </div>
-</div> <!-- container -->
+  <div class="bannerWrap02">
+    <div class="bsWrap">
+      <ul class="bSlider clearfix">
+        <li>
+        <img src="images/banner3.png" alt="">
+        <div class="sliderTxt">
+            <p>HILLTON HOTEL (PARIS)</p>
+        </div>
+        </li>
+        <li>
+        <img src="images/banner3.png" alt="">
+        <div class="sliderTxt">
+            <p>HILLTON HOTEL (PARIS)</p>
+        </div>
+        </li>
 
+      </ul>
+      <ul class="bSlider1 clearfix">
+        <li>
+        <img src="images/banner3.png" alt="">
+        <div class="sliderTxt">
+            <p>HILLTON HOTEL (PARIS)</p>
+        </div>
+        </li>
+        <li>
+        <img src="images/banner3.png" alt="">
+        <div class="sliderTxt">
+            <p>HILLTON HOTEL (PARIS)</p>
+        </div>
+        </li>
+
+      </ul>
+
+      <ul class="banner02  clearfix">
+        <li>
+        <img src="images/banner3.png" alt="">
+        <div class="sliderTxt">
+            <p>HILLTON HOTEL (PARIS)</p>
+        </div>
+        </li>
+      </ul>
+
+    <ul class="banner02  clearfix">
+      <li>
+      <img src="images/banner3.png" alt="">
+      <div class="sliderTxt">
+          <p>HILLTON HOTEL (PARIS)</p>
+      </div>
+      </li>
+    </ul>
+  </div>
+
+
+    </div>
+  </div>  <!-- container -->
 
 </div>
 </body>
