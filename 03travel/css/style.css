@@ -1,28 +1,25 @@
 @charset "utf-8";
-
+body {overflow-x: hidden;}
 .wrap {width: 100%;
-      background: #0765A3;
-      margin: 0 auto;}
+       background: #0765A3;}
 .headerWrap {width: 1200px;
-            height: 90px;
-            margin: 0 auto;
-            background:url(../images/header.jpg)no-repeat;}
+             height: 90px;
+             background: url(../images/header.jpg)no-repeat;
+             margin: 0 auto;}
 .header {width: 980px;
         margin: 0 auto;}
 
-/* 로고 */
-.header .logo {float:left;
-               padding-top: 20px;}
-.header .logo .logoTxt {float:right;
-                        padding-left: 10px; }
-.header .logo .logoTxt  h2{color:white;
-                           text-align: center;}
-.header .logo .logoTxt  p{color:white;
-                          font-size:12px;
-                          letter-spacing: 3px;
-                          text-align: center;}
+/*로고*/
+.logo {float: left;margin-top: 25px;}
+.logo a {float:right; padding-left: 10px;}
+.header .logo h2{color:white;
+                 text-align: center;}
+.header .logo p{color:white;
+                font-size:12px;
+                letter-spacing: 3px;
+                text-align: center;}
 
-/* 검색 */
+/*검색창*/
 .header .search {display: block;
                 border: 1px solid white;
                 width: 293px;
@@ -33,115 +30,181 @@
                 margin-left: 100px;
                 margin-top: 30px;}
 .header .search label {font-size:14px;
-               font-weight: bold;
-               padding-left: 15px;}
+                       font-weight: bold;
+                       padding-left: 15px;}
 .header .search input {width: 170px;
-               border:0 none;
-               padding-left: 10px;}
+                       border:0 none;
+                       padding-left: 10px;}
 .header .search img {padding-left: 5px;}
 
-/* 전화번호 & sns */
+
+/*전화번호 & SNS*/
 .header .call {float:left;
               color:white;
               font-size:25px;
               font-weight: bold;
-              padding-top: 25px;
+              padding-top: 30px;
               padding-left: 120px;}
 .header .sns {float:right;
               padding-top: 30px;}
 
-/* 메뉴 */
-.gnbWrap {width: 100%;
-          background: #f8f8f8;
+/*메뉴*/
+.menuWrap {width:100%;
+          background: #fff;
           border-bottom: 5px solid #0765A3;}
-.gnbWrap .gnbmenu {width: 980px;
-                   margin: 0 auto;}
-.gnbWrap .gnbmenu li {float:left;
-                      width:calc(980px / 6);
-                      border-left: 1px solid #e8e8e8;}
-.gnbWrap .gnbmenu li:last-child {border-right:1px solid #e8e8e8; }
-.gnbWrap .gnbmenu li a {line-height: 60px;
-                        display: block;
-                        text-align: center;
-                        font-weight: bold;}
-.gnbWrap .gnbmenu li:hover a {color:#2B71AB;}
-.gnbWrap .gnbmenu li .on {color:#2B71AB;}
+.menu {width: 980px; margin: 0 auto;}
+.menu li {width:calc(980px / 6);
+         float:left;
+         border-left: 1px solid #e8e8e8;}
+.menu li:last-child {border-right: 1px solid #e8e8e8;}
+.menu li a {display: block;
+            text-align: center;
+            line-height: 60px;}
 
-/* 본문 */
-.container {width: 100%;
-            height: 1238px;
-            background: url(../images/mainbg.png)no-repeat;}
 
-.content {width: 980px;
+/*본문*/
+.container {width: 100%; height: 1238px;
+            background: url(../images/mainbg.png)no-repeat center; 
+            margin: 0 auto;
+            .position: relative;
+            background-size: cover;}
+
+.contents {width: 980px;
           margin: 0 auto;
           padding-top: 60px;
-          background: pink;
           position: relative;}
-.reserve {margin-bottom: 15px; }
-.contentLeft {float:left;}
-.contentLeft .slider {width: 132px;
-                      height: 300px;
-                      background: skyblue;
-                      float:left;}
-.contentLeft .slider li {height: calc(300px / 4);}
-.contentLeft .slider li:nth-child(2) {background: #006599;}
-.contentLeft .slider li:nth-child(3) {background: #0099CB;}
-.contentLeft .slider li:nth-child(4) {background: #0099CB;}
-.contentLeft .slider li a {display: block;
-                          text-align: center;
-                          line-height: 35px;}
-.contentLeft .formWrap {width: 350px;
-                        height: 300px;
-                        background: #fff;
-                        float:right;}
-.contentRight {float:right;
-               position: relative;}
-.contentRight .mainTxt {margin-right: 90px;}
-.contentRight .mainTxt h3 {font-size: 60px; }
-.contentRight .mainTxt p {font-size: 30px; letter-spacing:-4px;}
-.contentRight .balloon {width: 750px; height: 533px;
-                        background: url(../images/02.png) no-repeat; position: absolute; top:50px; right: -80px; opacity: 0.7; }
 
-/* 배너 */
+
+.contLeft {float:left; position: relative; z-index: 1}
+.formWrap .slider {width: 132px;
+                   height: 300px;
+                   background: skyblue;
+                   float:left;}
+.formWrap .slider li {height: calc(300px / 4);}
+.formWrap .slider li:nth-child(2) {background: #006599;}
+.formWrap .slider li:nth-child(3) {background: #0099CB;}
+.formWrap .slider li:nth-child(4) {background: #0099CB;}
+.formWrap .slider li a {display: block;
+                        text-align: center;
+                        line-height: 35px;}
+.formWrap form {width: 350px;
+                height: 300px;
+                background: #fff;
+                float:right;
+                margin-bottom: 15px;}
+
+
 .bannerWrap div + div {margin-left: 16px;}
 .bannerWrap {margin-bottom: 15px;}
-.banner {float:left; position: relative; }
-.banner .bTxt {width: 234px; height: 50px;
+.banner01 {float:left; position: relative; }
+.banner01 .bTxt {width: 234px; height: 50px;
               background: #152630; position: absolute; bottom: 3px;
               display: flex; justify-content: center; align-items: center;}
-.banner .bTxt p {color:#fff; padding-left: 20px; font-weight: bold}
-.banner .bTxt p:nth-child(1) {padding-left: 0;}
-.banner .bTxt p:nth-child(2) {color:#539554}
+.banner01 .bTxt p {color:#fff; padding-left: 20px; font-weight: bold}
+.banner01 .bTxt p:nth-child(1) {padding-left: 0;}
+.banner01 .bTxt p:nth-child(2) {color:#539554}
 
 
-/*  본문 중앙 */
-.bannerWrap02 ul + ul  {margin-left: 16px;}
-.bannerWrap02 {width: 980px;
-               margin: 0 auto;
-               .background: skyblue;}
-.bannerWrap02 .bSlider,
-.bannerWrap02 .bSlider1 {position: relative; float:left;}
-.bannerWrap02 .bSlider .sliderTxt,
-.bannerWrap02 .bSlider1 .sliderTxt {width: 233px; height: 60px;
-                                  background: #529351; position: absolute;
-                                  bottom:-1px; display:flex; justify-content: center; align-items: center;}
 
-.bannerWrap02 .bSlider .sliderTxt p,
-.bannerWrap02 .bSlider1 .sliderTxt p {color:#fff; }
+.contRight {float:right;}
+.contRight .mainTxt {margin-right: 90px; position: relative; z-index: 2;}
+.contRight .mainTxt h3 {font-size: 60px; }
+.contRight .mainTxt p {font-size: 30px; letter-spacing:-4px;}
+.contRight .balloon {width: 750px; height: 533px;
+                     background: url(../images/02.png) no-repeat; position: absolute; top:50px; right: -80px; opacity: 0.7; }
 
-.bannerWrap02 .banner02 {position: relative; float:left;}
-.bannerWrap02 .banner02 .sliderTxt {width: 233px; height: 60px;
-                                  background: #529351; position: absolute;
-                                  bottom:-1px; display:flex; justify-content: center; align-items: center;}
-.bannerWrap02 .banner02 .sliderTxt p {color:#fff; }
-.bx-wrapper {width: 233px;
-            -moz-box-shadow: none;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            border: none;
-            background: none;
-            margin-bottom: 0;}
+/* 배너 2번째줄 */
+.banner02 {width: 980px; margin: 0 auto;}
+.banner02 > ul > li {width: 233px; height: 240px; float:left; 
+                     margin-right: 16px; position: relative;}
+.banner02 > ul > li:nth-child(4) {margin-right: 0;}
+
+
+.banner02 .sliderTxt {width: 233px; height: 60px;
+                      background: #529351; position: absolute;
+                      bottom:-1px; display: flex; align-items: center}
+.banner02 .bSlider1 .sliderTxt {background:#152630;}
+
+.banner02 > ul > li:nth-child(3) .sliderTxt {background: #242531; opacity: .7;}
+.banner02 > ul > li:nth-child(4) .sliderTxt {background: #44619D;}
+
+.banner02 .sliderTxt a {display: block;
+                        text-align: center;
+                        padding: 15px 15px;}
+.banner02 .sliderTxt p {color:#fff; text-align: left; 
+                        font-weight: bold;}
+.banner02 .sliderTxt p:last-child {font-size:12px}
+.banner02 li .imgTxt {position: absolute; top:20px; left:5px; line-height: 20px;}
+.banner02 li .imgTxt p {font-size: 14px; }
+.banner02 li .imgTxt p:nth-child(1) {padding-bottom: 20px;}
+.banner02 li .imgTxt p:nth-child(2) {color:blue; font-size:12px}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;}
+.bx-wrapper {
+    position: relative;
+    .margin-bottom: 60px;
+    padding: 0;}
+
+/* 배너 3번째줄 */
+.banner03 {width: 980px; 
+           margin: 0 auto; 
+           position: relative;}
+.banner03 .box {width: 233px;height: 240px; 
+                background: #448AB8;  
+                position: absolute;
+                top:0; opacity:.6;}
+.banner03 .box:hover {width: 233px;height: 240px; 
+                background: #135b89;  
+                position: absolute;
+                top:0; opacity:.6;}
+
+
+
+/*움직이는 이미지*/
+.visual {}
+.img01 {position: absolute;
+        right: 100px;
+        top:300px;
+        animation-name: ba01;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;}
+
+  @keyframes ba01 {
+    to{top:350px}
+  }
+
+.img02 {position: absolute;
+        left:100px;
+        top:400px;
+        animation-name: ba02;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;}
+
+@keyframes ba02 {
+    to {left:200px;}
+}
+
+.img03 {position: absolute;
+        left: 0; bottom:-1000px;
+        animation-name:air;
+        animation-duration:3s;
+        animation-fill-mode: forwards;}
+
+  @keyframes air {
+    to{left:100%;
+       bottom:100%;}
+  }
+
 
 
 
 /* 푸터 */
+footer {width: 980px;
+        margin: 0 auto;}
+footer li {float:left;}

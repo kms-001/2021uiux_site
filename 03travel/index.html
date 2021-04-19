@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TRAVEL himedia</title>
+    <meta charset="UTF-8">
+    <title>여행사</title>
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,175 +13,239 @@
       var mySlider = $(".bSlider").bxSlider({
         pager:false,
         });
-        $(".bSlider1").bxSlider();
+        $(".bSlider1").bxSlider({
+        pager:false,    
+        });
       });
   </script>
 </head>
 <body>
-  <div class="wrap"> <!-- 1900 /-->
-    <header class="headerWrap">
-
-      <div class="header clearfix">
-        <div class="logo">
-          <a href="#"><img src="images/travel_logo.png" alt="비행기"></a>
-        <div class="logoTxt">
-          <a href="#"><h2>TRAVEL</h2></a>
-          <a href="#"><p>하이미디어</p></a>
-        </div>
-        </div>
-
-        <div class="search">
-          <label for="usearch">SEARCH</label>
-          <input type="text" id="usearch" name="user-search" placeholder="검색어를 입력하세요.">
-          <a href="#"><img src="images/Vector.png" alt="검색"></a>
-        </div>
-
-
-          <div class="call">
+    <div class="wrap"> <!-- 100% -->
+    <header class="headerWrap">  <!-- 1200px-->
+        <div class="header clearfix"> <!-- 980px -->
+          
+          <!-- 로고 -->
+           <div class="logo">
+               <img src="images/travel_logo.png" alt="로고">
+               <a href="index.html">
+               <h2>TRAVEL</h2>
+               <p>하이미디어</p>
+               </a>
+           </div>
+           <!-- 검색창 -->
+            <div class="search">
+                <label for="usearch">SEARCH</label>
+                <input type="text" id="usearch" name="user-search" placeholder="검색어를 입력하세요.">
+                <a href="#"><img src="images/Vector.png" alt="검색"></a>
+            </div>
+            <!-- 전화번호 / sns -->
+            <div class="call">
             <p>+82 02 1234 5678</p>
           </div>
           <div class="sns">
-            <a href="#"><img src="images/snsicon1.png" alt=""></a>
-            <a href="#"><img src="images/snsicon2.png" alt=""></a>
-            <a href="#"><img src="images/snsicon3.png" alt=""></a>
-            <a href="#"><img src="images/snsicon4.png" alt=""></a>
+            <a href="#"><img src="images/snsicon1.png" alt="페이스북"></a>
+            <a href="#"><img src="images/snsicon2.png" alt="트위터"></a>
+            <a href="#"><img src="images/snsicon3.png" alt="밴드"></a>
+            <a href="#"><img src="images/snsicon4.png" alt="인사이트"></a>
           </div>
-
-    </div> <!-- class="header" -->
-    </header>
-
-
-    <div class="gnbWrap">
-        <nav class="gnbmenu">
-            <ul class="clearfix">
-                <li><a href="#">여행도시</a></li>
-                <li><a href="#">호텔예약</a></li>
-                <li><a href="#">렌트카</a></li>
-                <li><a href="#">여행TIP</a></li>
-                <li><a href="#" class="on">회사소개</a></li>
-                <li><a href="#">커뮤니티</a></li>
-            </ul>
-        </nav>
-    </div> <!-- class="gnbWrap" -->
-
-    <div class="container">
-      <div class="content clearfix"> <!-- 980px -->
-        <div class="contentLeft">
-          <div class="reserve clearfix">
-            <div class="slider">
-              <ul class="clearfix">
-                <li><img src="" alt="">
-                <a href="#">여행예약</a></li>
-                <li><img src="" alt="">
-                <a href="#">여행예약</a></li>
-                <li><img src="" alt="">
-                <a href="#">여행예약</a></li>
-                <li><img src="" alt="">
-                <a href="#">여행예약</a></li>
-              </ul>
+        </div> 
+    </header>    
+        
+        <!-- 메뉴 -->
+        <div class="menuWrap"> <!-- 100% -->
+            <div class="menu"> <!-- 980px -->
+                <ul class="clearfix">
+                    <li><a href="#">여행도시</a></li>
+                    <li><a href="#">호텔예약</a></li>
+                    <li><a href="#">렌트카</a></li>
+                    <li><a href="#">여행TIP</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
             </div>
-            <div class="formWrap">
-              <form>
-
-              </form>
-            </div>
-          </div>
-
-          <div class="bannerWrap clearfix">
-              <div class="banner">
-                <img src="images/banner1.png" alt="프랑스">
-                <div class="bTxt">
-                  <p>프랑스</p>
-                  <p>￦1,900,000</p>
-                  <p>&gt;</p>
-                </div>
-              </div>
-              <div class="banner">
-                <img src="images/banner2.png" alt="일본">
-                <div class="bTxt">
-                  <p>일본</p>
-                  <p>￦980,000</p>
-                  <p>&gt;</p>
-                </div>
-              </div>
-          </div>
-        </div> <!-- contentLeft -->
-
-        <div class="contentRight">
-          <div class="mainTxt">
-            <h3>TRAVEL GO</h3>
-            <p>지금, 여행이 떠나고 싶다면?</p>
-            <p>하이미디어와 여행을 떠나자!</p>
-          </div>
-          <div class="balloon"> </div>
-        </div> <!-- contentRight -->
-  </div>
-  <div class="bannerWrap02">
-    <div class="bsWrap ">
-<ul>
-  <li>  <ul class="bSlider clearfix">
-      <li>
-      <img src="images/banner3.png" alt="">
-      <div class="sliderTxt">
-          <p>HILLTON HOTEL (PARIS)</p>
-      </div>
-      </li>
-      <li>
-      <img src="images/banner3.png" alt="">
-      <div class="sliderTxt">
-          <p>HILLTON HOTEL (PARIS)</p>
-      </div>
-      </li>
-
-    </ul></li>
-  <li><ul class="bSlider1 clearfix">
-    <li>
-    <img src="images/banner3.png" alt="">
-    <div class="sliderTxt">
-        <p>HILLTON HOTEL (PARIS)</p>
-    </div>
-    </li>
-    <li>
-    <img src="images/banner3.png" alt="">
-    <div class="sliderTxt">
-        <p>HILLTON HOTEL (PARIS)</p>
-    </div>
-    </li>
-
-  </ul></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-
-
-
-
-
-      <ul class="banner02  clearfix">
-        <li>
-        <img src="images/banner3.png" alt="">
-        <div class="sliderTxt">
-            <p>HILLTON HOTEL (PARIS)</p>
         </div>
-        </li>
-      </ul>
+      </div>  <!-- wrap -->      
+       
+        <!-- 본문 -->
+        <div class="container "> <!-- 100% / 구름 배경 -->
+          <div class="contents clearfix">
+              <div class="contLeft ">
+                  <div class="formWrap clearfix ">
+                      <div class="slider">
+                          <ul class="clearfix">
+                              <li><img src="" alt="">
+                                  <a href="#">여행예약</a>
+                              </li>
+                              <li><img src="" alt="">
+                                  <a href="#">여행예약</a>
+                              </li>
+                              <li><img src="" alt="">
+                                  <a href="#">여행예약</a>
+                              </li>
+                              <li><img src="" alt="">
+                                  <a href="#">여행예약</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <form></form>
+                  </div>
+                  
+                  <div class="bannerWrap clearfix">
+                      <div class="banner01">
+                          <img src="images/banner1.png" alt="프랑스">
+                          <div class="bTxt">
+                              <p>프랑스</p>
+                              <p>￦1,900,000</p>
+                              <p>&gt;</p>
+                          </div>
+                      </div>
+                      <div class="banner01 ">
+                          <img src="images/banner2.png" alt="일본">
+                          <div class="bTxt">
+                              <p>일본</p>
+                              <p>￦980,000</p>
+                              <p>&gt;</p>
+                          </div>
+                      </div>
+                  </div>
+              </div> <!-- contLeft -->
+              
+              <div class="contRight">
+                  <div class="mainTxt">
+                      <h3>TRAVEL GO</h3>
+                      <p>지금, 여행이 떠나고 싶다면?</p>
+                      <p>하이미디어와 여행을 떠나자!</p>
+                  </div>
+                  <div class="balloon"> </div>
 
-    <ul class="banner02  clearfix">
-      <li>
-      <img src="images/banner3.png" alt="">
-      <div class="sliderTxt">
-          <p>HILLTON HOTEL (PARIS)</p>
-      </div>
-      </li>
-    </ul>
-  </div>
+              </div> <!-- contRight -->
+              
+              
 
+              
+              
+          </div> <!-- contents --> 
+              <div class="bannerWrap clearfix">
+                  <div class="banner02">
+                      <ul class="clearfix">
+                          <li>
+                              <ul class="bSlider clearfix">
+                                  <li>
+                                      <img src="images/banner3.png" alt="호텔">
+                                      <div class="sliderTxt">
+                                          <a href="#">
+                                          <p>HILLTON HOTEL (PARIS)</p>
+                                          <img src="images/star.png" alt="">    
+                                          </a>
+                                          
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <img src="images/banner3.png" alt="호텔">
+                                      <div class="sliderTxt">
+                                          <a href="#">
+                                          <p>HILLTON HOTEL (PARIS)</p>
+                                          <img src="images/star.png" alt="">    
+                                          </a>
+                                      </div>
+                                  </li>
 
-    </div>
-  </div>  <!-- container -->
+                              </ul>
+                          </li>
+                          <li>
+                              <ul class="bSlider1 clearfix">
+                                  <li>
+                                      <img src="images/banner4.png" alt="디즈니랜드">
+                                      <div class="sliderTxt">
+                                          <a href="#">
+                                          <p>관광명소 (디즈니랜드)</p>
+                                          <img src="images/star.png" alt="별">    
+                                          </a>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <img src="images/banner4.png" alt="디즈니랜드">
+                                      <div class="sliderTxt">
+                                          <a href="#">
+                                          <p>관광명소 (디즈니랜드)</p>
+                                          <img src="images/star.png" alt="별">    
+                                          </a>
+                                      </div>
+                                  </li>
 
-</div>
+                              </ul>
+                          </li>
+             
+                          <li>
+                              <img src="images/banner5.png" alt="">
+                              <div class="sliderTxt">
+                                          <a href="#">
+                                          <p>20℃ 구름조금</p>
+                                          <p>습도 60% 바람 남남동 2m/s</p>
+                                          </a>
+                              </div>
+                          </li>
+                   
+                          <li>
+                              <img src="images/banner6.png" alt="">
+
+                              <div class="sliderTxt">
+                                          <a href="#">
+                                          <p>faceboox 여행후기</p>
+                                          <p>(임정희님)</p>
+                                          </a>
+                              </div>                                
+                              <div class="imgTxt">
+                                  <p>"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히 <br>다녀올 수 있었어요."</p>
+                                  <p>프랑스 파리 자유여행</p>
+                                  <img src="images/star2.png" alt="">
+                              </div>     
+                              
+                                                                            
+                          </li>
+                      </ul>          
+                  </div> <!-- banner02 -->
+                </div> <!-- bannerWrap -->
+          
+                <div class="bannerWrap">
+                    <div class="banner03">
+                            <div class="cWrap">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </div>
+                        <img src="images/banner7.png" alt="프랑스">
+
+                         <div class="box"></div>
+                          <a href="#">
+                              <h3>여행정보</h3>
+                              <p>다양한 나라의 명소와 맛집 등 <br>상세한 정보를 볼수 있습니다.</p>
+                          </a>
+                    </div>
+                </div>
+          
+          
+        <!-- 움직이는 이미지 -->
+           <div class="visual">
+               <img src="images/content1.png" alt="열기구3" class="img01">
+               <img src="images/content2.png" alt="열기구1" class="img02">
+               <img src="images/reallyAir.png" alt="비행기" class="img03">
+           </div>
+       
+    </div>  <!-- container -->
+        
+        
+        <!-- 푸터 -->
+            <footer>
+                <ul class="clearfix">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#" class="bold">개인정보취급방침</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">광고 및 제휴문의</a></li>
+                </ul>
+                <p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호:123-45-478910 대표이사:홍길동 대표번호:02-1234-5678</p>
+                <p>COPYRIGHT©2014 HIMEDIA TOUR.ALL RIGHTS RESERVED</p>
+            </footer>
+
 </body>
 </html>
