@@ -1,1 +1,6 @@
-alert("연결")
+
+$(document).ready(function(){
+  $(".slider").bxSlider({
+    pager:false,
+  });
+});

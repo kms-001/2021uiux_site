@@ -1,1 +1,14 @@
-@@charset "UTF-8";
+@charset "UTF-8";
+
+.sliderWrap .bx-wrapper {-moz-box-shadow: none;
+                      -webkit-box-shadow: none;
+                      box-shadow: none;
+                      border: none;}
+.slider li img{width: 100%;}
+.sliderWrap li.slider1st,
+.sliderWrap li.slider2st {background-repeat: no-repeat;
+                          background-position: center;
+                          background-size:cover;
+                          height: 1000px;}
+.sliderWrap li.slider1st {background-image: url(../images/mainimg01.jpg);}
+.sliderWrap li.slider2st {background-image: url(../images/mainimg02.jpg);}
