@@ -1,5 +1,36 @@
 @charset "UTF-8";
+/* header */
+#headerTop{width: 1240px;
+           position: fixed;
+           z-index: 9999;
+           .background: pink;
+           left: 50%; top: 20px;
+           transform: translateX(-50%);}
+#headerTop .logo {float: left; width: 100px; line-height: 50px}
+#main_menu {float:right;}
+#main_menu li {float:left;}
+#main_menu li a{display: block;
+                padding: 0 20px;
+                line-height: 50px;
+                font-weight: bold;
+                color:#fff}
+#main_menu li:hover {background: skyblue;}
 
+/* toggleMenu */
+#headerTop .toggleMenu {width: 50px; height: 50px;
+                        .background: gray; float:right;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        display: none;}
+#headerTop .toggleMenu div{width: 30px; height: 3px;
+                          background: #fff; border-radius: 3px;
+                          position: absolute;}
+#headerTop .toggleMenu .bar1{transform: translateY(10px);}
+#headerTop .toggleMenu .bar3{transform: translateY(-10px);}
+
+/* slider */
 .sliderWrap .bx-wrapper {-moz-box-shadow: none;
                       -webkit-box-shadow: none;
                       box-shadow: none;
@@ -12,3 +43,7 @@
                           height: 1000px;}
 .sliderWrap li.slider1st {background-image: url(../images/mainimg01.jpg);}
 .sliderWrap li.slider2st {background-image: url(../images/mainimg02.jpg);}
+.sliderWrap .slider_txt {position: absolute;
+                        left: 50%; top: 20%;
+                        transform:translate(-50%, -50%);
+                        color:#fff; text-align: center}
