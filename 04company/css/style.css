@@ -97,7 +97,8 @@
 
 /* container */
 .container {height: 750px;
-           background: #aaa url(../images/vmain.jpg) no-repeat center fixed; margin-bottom: 60px;
+           background: #aaa url(../images/vmain.jpg) no-repeat center fixed;
+           margin-bottom: 60px;
            background-size: cover; color:#fff; padding:80px 0;
            .position: relative; .top:670px;}
 .container .section {width: 1240px; margin: 0 auto;}
@@ -115,7 +116,8 @@
                         height: 380px; padding-top: 70px;
                         border-radius: 10px;
                         transition:.3s; cursor: pointer;}
-.container .section li:hover{box-shadow:5px 5px 8px rgba(0,0,0,0.5);                                    background: #FFC81F;
+.container .section li:hover{box-shadow:5px 5px 8px rgba(0,0,0,0.5);
+                             background: #FFC81F;
                              transform:translate(-10px, -10px)}
 .container .section li + li {margin-left: 20px;}
 /* 두번째 있는 li 태그부터 적용 */
@@ -126,7 +128,7 @@
 
 
 /* section2 */
-.section2 {.position: relative; margin-bottom: 80px;}
+.section2 {.position: relative; margin-bottom: 60px;}
 .section2 .snsList {width: 1240px;
                      margin: 0 auto;
                      display: flex;
@@ -143,31 +145,34 @@
                         align-items: center;}
 .section2 .snsList>li:nth-child(1) {height: 620px; background: #2E4D8E;}
 .section2 .snsList>li:nth-child(3) {background: #F4EFE6}
-.section2 .snsList>li:nth-child(5) {position: absolute; width: 310px; top:310px; left:310px; background: #F4EFE6}
+.section2 .snsList>li:nth-child(5) {position: absolute; width: 310px;
+                                    top:310px; left:310px; background: #F4EFE6}
 .section2 .snsList>li:nth-child(6) {position: absolute;width: 310px; top:310px; left:620px;}
 .section2 .snsList>li:nth-child(7) {position: absolute;width: 310px; top:310px; left:930px; background:#F4EFE6 }
 
 .section2 .snsList .boxTop:after {content: "";
+                                  border-width: 20px;
+                                  border-style: solid;
+                                  border-color: transparent transparent #F4EFE6 transparent;
+                                  position: absolute;
+                                  top: -40px;
+                                  left: 50%;
+                                  transform: translateX(-50%);}
+.section2 .snsList .boxBottom:after {content: "";
                                     border-width: 20px;
                                     border-style: solid;
-                                    border-color: transparent transparent #F4EFE6 transparent;
+                                    border-color: #F4EFE6 transparent transparent transparent ;
                                     position: absolute;
-                                    top: -40px;
-                                    left: 50%;
-                                    transform: translateX(-50%);}
-.section2 .snsList .boxBottom:after {content: "";
-                                        border-width: 20px;
-                                        border-style: solid;
-                                        border-color: #F4EFE6 transparent transparent transparent ;
-                                        position: absolute;
-                                        top:310px; z-index: 99}
+                                    top:310px; z-index: 99}
 
-.section2 .snsList .snsTxt {line-height: 25px}
+.section2 .snsList .snsTxt {line-height: 25px; color:#333}
 .section2 .snsList .snsTxt .hash {color: #2E4D8E; font-weight: bold;
                                   margin-bottom: 10px;}
 .section2 .snsList .snsTxt img {margin-top: 10px;}
+
+
 /* section3 */
-.section3 {margin-bottom: 80px;}
+.section3 {margin-bottom: 60px;}
 .section3 .box1{background: #F4EFE6;}
 .section3 .box2{background: #FFC81F;}
 .section3 ul {width: 1240px;
@@ -178,13 +183,14 @@
 .section3 .box1>h3 {color:#C53834;
                     font-size:2rem;}
 .section3 .box1>p {color:#C53834;
-                    font-size:1.3rem;}
+                    font-size:1.2rem;}
 .section3 .box2>h3 {color:#fff;
                     font-size:2rem;}
 .section3 .box2>p {color:#fff;
-                    font-size:1.3rem;}
+                    font-size:1.2rem;}
 
-
+.section3 .box1 img,.section3 .box2 img {display: block;
+                                         float: right;}
 .section3 .box1 .boxBtn {width: 170px;
                          border: 1px solid #C53834;}
 .section3 .box2 .boxBtn {width: 170px;
@@ -200,18 +206,28 @@
                           color:#fff;
                           font-weight: bold;}
 
+
 /* footer */
 .footerWrap {width: 1240px;
-             margin: 0 auto;}
-.footerWrap .logo {float:left;}
-.footerWrap .logo img {width: 140px; height: 45px;}
-
-
-
+             margin: 0 auto;
+             position: relative;}
+.footerWrap .footerLogo {float:left; }
+.footerWrap .footerLogo img {width: 140px; height: 45px;
+                             position: absolute; top:30px}
+.footerWrap .footerTxt {float:left;
+                        position: absolute;
+                        left: 200px;
+                        padding: 10px 0;}
+.footerWrap .txt01 li{float:left;}
+.footerWrap .txt01 li a {display: block;
+                         line-height: 20px;
+                         padding-right: 20px;
+                         color:#333;}
+.footerWrap .txt02 {color:#BEB5AA}
 
 
 /* margin */
 .mb10 {margin-bottom: 10px;}
 .mb20 {margin-bottom: 20px;}
 .mb30 {margin-bottom: 30px;}
-.mb80 {margin-bottom: 80px;}
+.mb60 {margin-bottom: 60px;}
