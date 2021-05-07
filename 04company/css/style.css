@@ -1,40 +1,49 @@
 @charset "UTF-8";
 /* header */
-#header {}
-#headerTop{width: 1240px;
+#headerWrap {width: 100%; background: pink;}
+#header{width: 1240px;
            position: fixed;
            z-index: 9999;
-           .background: pink;
            left: 50%; top: 20px;
-           transform: translateX(-50%);}
-#headerTop .logo a {float: left;
-                    display: block;}
-#headerTop .logo img {width: 140px; height: 45px;}
+           transform: translateX(-50%);
+           background: #fff;}
+#header .logo a {float: left;
+                display: block;}
+#header .logo img {width: 140px; height: 45px;}
 #main_menu {float:right;}
-#main_menu li {float:left;}
+#main_menu li {float:left;
+              width:calc(900px / 5);}
 #main_menu li a{display: block;
-                padding: 0 20px;
                 line-height: 50px;
                 font-weight: bold;
-                text-shadow: 0 0 10px #000;
-                color:#fff;
-                font-size:20px;}
+                color:#333;
+                font-size:20px;
+                text-align: center;}
 #main_menu li:hover {background: #FFC81F;}
+#main_menu li:hover a {background: #fff;}
+#main_menu li:hover .sub_menu {display: block;}
+#main_menu .sub_menu {display:none;}
+#main_menu .sub_menu li:hover a {background: #FFC81F; color:#fff}
+#main_menu .sub_menu li a {display: block;
+                          line-height: 50px;
+                          text-align: center;
+                          font-size: 16px}
 
 
 /* toggleMenu */
-#headerTop .toggleMenu {width: 50px; height: 50px;
+#header .toggleMenu {width: 50px; height: 50px;
                         .background: gray; float:right;
                         position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         display: none;}
-#headerTop .toggleMenu div{width: 30px; height: 3px;
+#header .toggleMenu div{width: 30px; height: 3px;
                           background: #fff; border-radius: 3px;
                           position: absolute; }
-#headerTop .toggleMenu .bar1{transform: translateY(10px);}
-#headerTop .toggleMenu .bar3{transform: translateY(-10px);}
+#header .toggleMenu .bar1{transform: translateY(10px);}
+#header .toggleMenu .bar3{transform: translateY(-10px);}
+
 
 /* slider */
 .sliderWrap .bx-wrapper {-moz-box-shadow: none;
@@ -58,12 +67,14 @@
                           text-align: center}
 
 /* content */
-.content {.position: absolute;
-          .top:690px;left:50%;.transform:translateX(-50%)}
+.content {position: relative; height: 620px; margin-bottom: 60px;}
 .content .contList {width: 1240px;
                     margin: 0 auto;
                     display: flex;
-                    flex-wrap: wrap;}
+                    flex-wrap: wrap;
+                    position: absolute;
+                    top:-310px;left:50%;
+                    transform:translateX(-50%)}
 .content .contList>li {width: 25%; height: 310px;
                       display: flex;
                       justify-content: center;
@@ -82,8 +93,7 @@
 .content .contList>li:nth-child(8){background: #FFC81F;}
 .content .contList>li:nth-child(9){width: 50%;
                                   background-image: url(../images/banner03.png);
-                                  cursor: pointer;
-                                  margin-bottom: 60px;}
+                                  cursor: pointer;}
 .content .contList>li img {width: 100px;
                            height: 100px;
                            margin-bottom: 10px;}
@@ -99,8 +109,7 @@
 .container {height: 750px;
            background: #aaa url(../images/vmain.jpg) no-repeat center fixed;
            margin-bottom: 60px;
-           background-size: cover; color:#fff; padding:80px 0;
-           .position: relative; .top:670px;}
+           background-size: cover; color:#fff; padding:80px 0;}
 .container .section {width: 1240px; margin: 0 auto;}
 .container .section>h3 {text-align: center;}
 .container .section>h3:after {content:"";
@@ -128,7 +137,7 @@
 
 
 /* section2 */
-.section2 {.position: relative; margin-bottom: 60px;}
+.section2 { margin-bottom: 60px;}
 .section2 .snsList {width: 1240px;
                      margin: 0 auto;
                      display: flex;
@@ -211,6 +220,7 @@
 .footerWrap {width: 1240px;
              margin: 0 auto;
              position: relative;}
+
 .footerWrap .footerLogo {float:left; }
 .footerWrap .footerLogo img {width: 140px; height: 45px;
                              position: absolute; top:30px}

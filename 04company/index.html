@@ -18,31 +18,59 @@
 </head>
 
 <body>
-    <header id="header clearfix">
-        <div id="headerTop" class="clearfix">
-            <div class="logo">
-                <a href="">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-            </div> <!-- .logo -->
-            <div class="toggleMenu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div> <!-- .toggleMenu -->
-            <nav id="main_menu">
-                <ul class="clearfix">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">제품안내</a></li>
-                    <li><a href="#">홍보센터</a></li>
-                    <li><a href="#">사회공헌</a></li>
-                    <li><a href="#">고객의소리</a></li>
-                </ul>
-            </nav>
-
-
-
-        </div> <!-- #headerTop -->
+    <header>
+        <div id="headerWrap">
+          <div id="header" class="clearfix">
+              <div class="logo">
+                  <a href="">
+                      <img src="images/logo.png" alt="logo">
+                  </a>
+              </div> <!-- .logo -->
+              <div class="toggleMenu">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </div> <!-- .toggleMenu -->
+              <nav id="main_menu">
+                  <ul class="clearfix">
+                      <li><a href="#">회사소개</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">동서식품 소개</a></li>
+                            <li><a href="#">부문역량</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">제품안내</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">제품소개</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">홍보센터</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">웹진삶의향기</a></li>
+                            <li><a href="#">커피클래스</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">사회공헌</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">동서문학상</a></li>
+                            <li><a href="#">사랑의향기</a></li>
+                            <li><a href="#">꿈의도서관</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">고객의소리</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">일반문의</a></li>
+                            <li><a href="#">불편사항</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+              </nav>
+          </div> <!-- #headerTop -->
+        </div>
 
         <div class="sliderWrap">
             <ul class="slider clearfix">
@@ -60,7 +88,7 @@
                 </li>
             </ul>
         </div> <!-- .sliderWrap -->
-
+    </header>
 
     <div class="content">
         <ul class="contList clearfix">
@@ -99,7 +127,7 @@
             <li></li>
         </ul>
     </div> <!-- .content -->
-    </header>
+
 
     <div class="container">
         <!-- 100% -->
@@ -109,7 +137,7 @@
             <h3>비전</h3>
             <p>VISION 2021</p>
             <ul class="clearfix">
-                <li onclick="location.href='http://www.daum.net'">
+                <li onclick="location.href='https://www.naver.com'">
                     <div class="card">
                         <img src="images/vicon01.png" alt="">
                         <div class="card_body">
@@ -155,7 +183,7 @@
     <div class="section2">
         <ul class="snsList clearfix">
             <li><a href="#">
-                <img src="images/snsicon.png" alt="">
+                <img src="images/snsicon.png" alt="facebook">
             <div class="mainTxt">
                 <h1 class="mb10">facebook</h1>
                 <p class="mb10">세상의 모든 순간이<br>더욱 행복해지도록</p>
@@ -176,7 +204,7 @@
                     카누 싱글 오리진과<br>
                     링 핸들 텀블러로<br>
                     분위기 UP!</p>
-                    <img src="images/Path.png" alt="">
+                    <img src="images/Path.png" alt="heart">
                 </div>
             </a></li>
             <li><a href="#">
@@ -192,7 +220,7 @@
                     저의 최애 집콕 필수템은<br>
                     고소함 충전 <br>
                     아몬드 후레이크 ♥</p>
-                    <img src="images/Path.png" alt="">
+                    <img src="images/Path.png" alt="heart">
 
                 </div>
             </a></li>
@@ -209,7 +237,7 @@
                     <br>Recharge 해요!
                     여러분의 시험공부<br>
                     Recharge 아이템은</p>
-                    <img src="images/Path.png" alt="">
+                    <img src="images/Path.png" alt="heart">
                 </div>
             </a></li>
         </ul>
@@ -218,7 +246,7 @@
     <div class="section3">
         <ul class="clearfix">
             <li class="box1">
-                <img src="images/box01.png" alt="">
+                <img src="images/box01.png" alt="icon">
                 <h3 class="mb20">Dongsuh History</h3>
                 <p class="mb30">식품문화를 꽃피워온<br>
                 동서식품의 지난 발자취</p>
@@ -227,7 +255,7 @@
                 </div>
             </li>
             <li class="box2">
-                <img src="images/box02.png" alt="">
+                <img src="images/box02.png" alt="icon">
                 <h3 class="mb20">Food Safety</h3>
                 <p class="mb30">안전한 식품이야기<br>
                 동서식품의 안전센터</p>
@@ -239,9 +267,10 @@
     </div> <!-- section3 -->
 
     <footer>
+      <hr style="width:100%">
         <div class="footerWrap clearfix">
             <div class="footerLogo">
-                <a href="#"><img src="images/logo.png" alt="로고"></a>
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
             </div>
             <div class="footerTxt">
               <div class="txt01">
