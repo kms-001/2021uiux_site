@@ -80,21 +80,21 @@
                       display: flex;
                       justify-content: center;
                       align-items: center;}
-.content .contList>li:nth-child(1){background: #FFC81F;}
-.content .contList>li:nth-child(2){background: #F4EFE6;}
+.content .contList>li:nth-child(1){background: #FFC81F; order:1;}
+.content .contList>li:nth-child(2){background: #F4EFE6; order:2;}
 .content .contList>li:nth-child(3){width: 50%;
                                   background-image: url(../images/banner01.png);
-                                  cursor: pointer;}
+                                  cursor: pointer; order:3;}
 .content .contList>li:nth-child(4){width: 50%;
                                   background-image: url(../images/banner02.png);
-                                  cursor: pointer;}
-.content .contList>li:nth-child(5){background: #F4EFE6;}
-.content .contList>li:nth-child(6){background: #FFC81F;}
-.content .contList>li:nth-child(7){background: #F4EFE6;}
-.content .contList>li:nth-child(8){background: #FFC81F;}
+                                  cursor: pointer; order:4;}
+.content .contList>li:nth-child(5){background: #F4EFE6; order:5;}
+.content .contList>li:nth-child(6){background: #FFC81F; order:6;}
+.content .contList>li:nth-child(7){background: #F4EFE6; order:7;}
+.content .contList>li:nth-child(8){background: #FFC81F; order:8;}
 .content .contList>li:nth-child(9){width: 50%;
                                   background-image: url(../images/banner03.png);
-                                  cursor: pointer;}
+                                  cursor: pointer; order:9;}
 .content .contList>li img {width: 100px;
                            height: 100px;
                            margin-bottom: 10px;}
@@ -105,7 +105,7 @@
 .content .contList>li:nth-child(6) p {color:#F4EFE6}
 .content .contList>li:nth-child(7) p {color:#C53834}
 .content .contList>li:nth-child(8) p {color:#F4EFE6}
-
+.content .contList .titleTxt {display: none;}
 
 /* container */
 .container {height: 750px;
@@ -136,7 +136,7 @@
                             margin: 0 auto;}
 .container .section .card_body {text-align: center; padding: 20px 40px;}
 .container .section .card_body h3 {margin-bottom: 10px;}
-
+.container .section .card .img2 {display: none;}
 
 /* section2 */
 .section2 { margin-bottom: 60px;}
