@@ -32,15 +32,15 @@
 
 /* toggleMenu */
 #header .toggleMenu {width: 50px; height: 50px;
-                        .background: gray; float:right;
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        display: none;}
+                      .background: gray; float:right;
+                      position: relative;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      display: none;}
 #header .toggleMenu div{width: 30px; height: 3px;
-                          background: #fff; border-radius: 3px;
-                          position: absolute; }
+                        background: #fff; border-radius: 3px;
+                        position: absolute; }
 #header .toggleMenu .bar1{transform: translateY(10px);}
 #header .toggleMenu .bar3{transform: translateY(-10px);}
 
@@ -67,7 +67,8 @@
                           text-align: center}
 
 /* content */
-.content {position: relative; height: 620px; margin-bottom: 60px;}
+.content {position: relative;
+          height: 620px; margin-bottom: 60px;}
 .content .contList {width: 1240px;
                     margin: 0 auto;
                     display: flex;
@@ -104,6 +105,7 @@
 .content .contList>li:nth-child(6) p {color:#F4EFE6}
 .content .contList>li:nth-child(7) p {color:#C53834}
 .content .contList>li:nth-child(8) p {color:#F4EFE6}
+
 
 /* container */
 .container {height: 750px;
