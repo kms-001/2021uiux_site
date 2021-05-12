@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* header */
-#headerWrap {width: 100%; background: pink;}
+#headerWrap {}
 #header{width: 1240px;
-           position: fixed;
-           z-index: 9999;
-           left: 50%; top: 20px;
-           transform: translateX(-50%);
-           background: #fff;}
+        z-index: 9999;
+        position: fixed;
+        left: 50%; top: 20px;
+        transform: translateX(-50%);
+        background: #fff;}
 #header .logo a {float: left;
                 display: block;}
 #header .logo img {width: 140px; height: 45px;}
