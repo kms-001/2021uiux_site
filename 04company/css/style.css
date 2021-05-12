@@ -31,18 +31,25 @@
 
 
 /* toggleMenu */
-#header .toggleMenu {width: 50px; height: 50px;
-                      .background: gray; float:right;
-                      position: relative;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      display: none;}
-#header .toggleMenu div{width: 30px; height: 3px;
-                        background: #fff; border-radius: 3px;
-                        position: absolute; }
-#header .toggleMenu .bar1{transform: translateY(10px);}
-#header .toggleMenu .bar3{transform: translateY(-10px);}
+.toggleMenu {width: 50px; height: 50px;
+                      background: gray;right: 0;top: 0;
+                      position: absolute;
+
+                      display: none;;z-index: 999}
+.toggleMenu div{width: 30px; height: 3px;
+                        background: #f00; border-radius: 3px;
+                        position: absolute;transition:0.3s;
+                        top:50%;left:50%;transform:translate(-50%,-50%)
+
+                      }
+.toggleMenu .bar1{transform: translateY(10px) translateX(-50%);}
+.toggleMenu .bar3{transform: translateY(-10px) translateX(-50%);}
+
+.toggleMenu.change .bar1{left:50%; top:50%;
+                         transform:translate(-50%,-50%) rotate(-45deg)}
+.toggleMenu.change .bar2{opacity:0}
+.toggleMenu.change .bar3{left:50%; top:50%;
+                         transform:translate(-50%,-50%) rotate(45deg)}
 
 
 /* slider */
@@ -59,12 +66,12 @@
                           height: 1000px;}
 .sliderWrap li.slider1st {background-image: url(../images/main01.jpg);}
 .sliderWrap li.slider2st {background-image: url(../images/main02.jpg);}
-.sliderWrap .slider_txt h1 {font-size:50px; margin-bottom: 20px;}
+.sliderWrap .slider_txt h1 {font-size:50px; margin-bottom: 20px; text-shadow: 1px 1px 1px #333;}
 .sliderWrap .slider_txt {position: absolute;
                           left: 50%; top: 40%;
                           transform:translate(-50%, -50%);
                           color:#fff;
-                          text-align: center}
+                          text-align: center; text-shadow: 1px 1px 1px #333;}
 
 /* content */
 .content {position: relative;
