@@ -7,41 +7,38 @@
         left: 50%; top: 20px;
         transform: translateX(-50%);
         background: #fff;}
+#header .logo {position: absolute; top:5px}
 #header .logo a {float: left;
                 display: block;}
-#header .logo img {width: 140px; height: 45px;}
+#header .logo img {width: 140px;
+                   height: 45px;}
 #main_menu {float:right;}
 #main_menu li {float:left;
               width:calc(900px / 5);}
-#main_menu li a{display: block;
-                line-height: 50px;
-                font-weight: bold;
-                color:#333;
-                font-size:18px;
-                text-align: center;}
-#main_menu li:hover {background: #FFC81F;}
-#main_menu li:hover a {background: #fff;}
-#main_menu li:hover .sub_menu {display: block;}
-#main_menu .sub_menu {display:none;}
-#main_menu .sub_menu li:hover a {background: #FFC81F; color:#fff}
-#main_menu .sub_menu li a {display: block;
-                          line-height: 50px;
-                          text-align: center;
-                          font-size: 16px}
-
+#main_menu .main_txt>a{display: block;
+                      line-height: 60px;
+                      font-weight: bold;
+                      color:#333;
+                      font-size:18px;
+                      text-align: center;}
+#main_menu:hover .sub_menu {display:block;}
+#main_menu li:hover a {color:#333; _background: #fff;}
+#main_menu .sub_menu {display: none;}
+#main_menu .sub_menu a{display: block; line-height: 50px;
+                      font-weight: bold; font-size:14px;
+                      text-align: center;}
+#main_menu .sub_menu li:hover a {color:#f00}
 
 /* toggleMenu */
-.toggleMenu {width: 50px; height: 50px;
-                      background: gray;right: 0;top: 0;
-                      position: absolute;
-
-                      display: none;;z-index: 999}
+.toggleMenu {width: 45px; height: 60px;
+              _background: gray; right: 0;top: 0;
+              position: absolute;
+              display: none; z-index: 999}
 .toggleMenu div{width: 30px; height: 3px;
-                        background: #f00; border-radius: 3px;
-                        position: absolute;transition:0.3s;
-                        top:50%;left:50%;transform:translate(-50%,-50%)
-
-                      }
+                background: #f00; border-radius: 3px;
+                position: absolute; transition:0.3s;
+                top:50%; left:50%;
+                transform:translate(-50%,-50%)}
 .toggleMenu .bar1{transform: translateY(10px) translateX(-50%);}
 .toggleMenu .bar3{transform: translateY(-10px) translateX(-50%);}
 
@@ -246,6 +243,57 @@
                          color:#333;}
 .footerWrap .txt02 {color:#BEB5AA}
 
+
+/* company01 */
+.sub {width: 100%;}
+.sub img {display: block;}
+.sub .sub_Txt {text-align: center; position: absolute;
+              left: 50%; top: 30%;
+              transform:translate(-50%, -30%); color: white;
+              text-shadow: 1px 1px 1px #333}
+.sub .sub_Txt h2 {margin-bottom: 10px;}
+.sub_nav {width: 1240px;
+          margin: 0 auto;
+          background: #F4EFE6;
+          position: absolute;
+          left: 50%; top: 48%;
+          transform:translate(-50%, -46%);
+          border-bottom: 2px solid #FFC81F;}
+.sub_nav li {float: left;
+            width: calc(1240px/3);
+            line-height: 50px;
+            border-right: 1px solid #ddd;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;}
+.sub_nav li a {display: block; color:#333}
+.sub_nav li:nth-child(3){border-right: 0;}
+.sub_nav li.active {background: #ffc81f;}
+
+
+/*company01 sub_category */
+.sub_category { width: 1240px;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 15px;}
+.sub_category li {float: left; margin-right: 8px;}
+.sub_category li a {font-size: 14px;
+                    display: block;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #333;}
+.sub_category li:nth-child(5) a {color: #ffc81f;}
+
+.sub_section {width: 1240px; margin: 0 auto;}
+.sub_section h3 {text-align: center; margin-bottom: 20px;}
+.sub_section h3:before {content:"";
+                      display: block;
+                      width: 50px; height: 2px;
+                      background: #ffc81f;
+                      margin: 20px auto;}
+.sub_section img {display: block;
+                 margin-bottom: 20px;}
 
 /* margin */
 .mb10 {margin-bottom: 10px;}
