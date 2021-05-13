@@ -130,3 +130,18 @@
 .footerWrap  .footerTxt {padding: 5px 0;}
 .footerWrap  .footerTxt .txt01 {display: none;}
 .footerWrap  .footerTxt .txt02 p {display: none;}
+
+
+
+
+/* company01 */
+.sub_nav {width: 700px; margin: 0 auto;
+          background: #F4EFE6;
+          position: absolute;
+          left: 50%; top: 49%;
+          transform:translate(-50%, -54%);
+          border-bottom: 2px solid #FFC81F;}
+.sub_nav li {width: calc(700px/3);}
+
+.sub_section{width: 100%;}
+.sub_section img {width: 100%;}
