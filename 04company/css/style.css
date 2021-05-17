@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* header */
+header{position: relative;}
 #headerWrap {}
 #header{width: 1240px;
         z-index: 9999;
@@ -244,20 +245,24 @@
 .footerWrap .txt02 {color:#BEB5AA}
 
 
-/* company01 */
-.sub {width: 100%;}
+
+/* company */
+header {background-image: url(../images/submain.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;}
+.sub {width: 100%; height: 460px; position: relative;}
 .sub img {display: block;}
 .sub .sub_Txt {text-align: center; position: absolute;
-              left: 50%; top: 30%;
-              transform:translate(-50%, -30%); color: white;
+              left: 50%; top: 50%;
+              transform:translate(-50%, -50%); color: white;
               text-shadow: 1px 1px 1px #333}
 .sub .sub_Txt h2 {margin-bottom: 10px;}
 .sub_nav {width: 1240px;
-          margin: 0 auto;
           background: #F4EFE6;
           position: absolute;
-          left: 50%; top: 48%;
-          transform:translate(-50%, -46%);
+          left: 50%; transform: translateX(-50%);
+          bottom:0;
           border-bottom: 2px solid #FFC81F;}
 .sub_nav li {float: left;
             width: calc(1240px/3);
@@ -272,7 +277,7 @@
 .sub_nav li.active {background: #ffc81f;}
 
 
-/*company01 sub_category */
+/*company sub_category */
 .sub_category { width: 1240px;
                 height: 50px;
                 margin: 0 auto;
@@ -285,15 +290,48 @@
                     color: #333;}
 .sub_category li:nth-child(5) a {color: #ffc81f;}
 
-.sub_section {width: 1240px; margin: 0 auto;}
-.sub_section h3 {text-align: center; margin-bottom: 20px;}
-.sub_section h3:before {content:"";
+
+.boxWrap {width: 1240px; margin: 0 auto;}
+.boxWrap h3 {text-align: center; margin-bottom: 20px;}
+.boxWrap h3:before {content:"";
                       display: block;
                       width: 50px; height: 2px;
                       background: #ffc81f;
                       margin: 20px auto;}
-.sub_section img {display: block;
-                 margin-bottom: 20px;}
+.boxWrap img {display: block;
+              margin-bottom: 20px;}
+
+
+/* brand */
+header.brand {background-image: url(../images/brandmain.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;}
+.brand_nav {width: 1240px;
+          background: #F4EFE6;
+          position: absolute;
+          left: 50%; transform: translateX(-50%);
+          bottom:0;
+          border-bottom: 2px solid #FFC81F;}
+.brand_nav li {float: left;
+            width: calc(1240px/2);
+            line-height: 50px;
+            border-right: 1px solid #ddd;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;}
+.brand_nav li a {display: block; color:#333}
+.brand_nav li:nth-child(3){border-right: 0;}
+.brand_nav li.active {background: #ffc81f;}
+
+
+/* promotion */
+header.promotion {background-image: url(../images/promotion.png);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;}
+
 
 /* margin */
 .mb10 {margin-bottom: 10px;}

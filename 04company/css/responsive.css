@@ -20,7 +20,7 @@
                       align-items: center;
                       transition: .3s;
                       background:#F4EFE6;}
-  #header #main_menu .main_txt {background: pink; width: 300px;}
+  #header #main_menu .main_txt {_background: pink;}
   #header #main_menu .sub_menu{display: none;}
   #main_menu li {float:none}
   /* toggleMenu */
@@ -123,7 +123,9 @@
 .footerWrap {width: 100%;
              margin: 0 auto;
              position: relative;}
-.footerWrap .footerLogo {float: none; display: flex; justify-content: center; align-items: center; margin:5px 0;}
+.footerWrap .footerLogo {float: none; display: flex;
+                        justify-content: center;
+                        align-items: center; margin:5px 0;}
 .footerWrap .footerLogo img {width: 140px; height: 45px;
                              position: initial;}
 
@@ -134,14 +136,16 @@
 
 
 
-/* company01 */
+/* company */
 .sub_nav {width: 700px; margin: 0 auto;
           background: #F4EFE6;
           position: absolute;
-          left: 50%; top: 49%;
-          transform:translate(-50%, -54%);
+          left: 50%; top: 46%;
+          transform:translate(-50%, -46%);
           border-bottom: 2px solid #FFC81F;}
 .sub_nav li {width: calc(700px/3);}
-
 .sub_section{width: 100%;}
 .sub_section img {width: 100%;}
+
+
+/* brand */

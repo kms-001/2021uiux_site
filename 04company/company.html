@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
+    <header class="">
       <div id="headerWrap">
         <div id="header" class="clearfix ">
             <div class="logo">
@@ -31,20 +31,21 @@
             </div> <!-- .toggleMenu -->
             <nav id="main_menu">
                 <ul class="clearfix">
-                    <li class="main_txt"><a href="company01.html">회사소개</a>
+
+                    <li class="main_txt"><a href="company.html">회사소개</a>
                       <ul class="sub_menu">
-                          <li><a href="#">동서식품 소개</a></li>
+                          <li><a href="company.html">동서식품 소개</a></li>
                           <li><a href="#">부문역량</a></li>
                           <li><a href="#">오시는길</a></li>
                       </ul>
                     </li>
-                    <li class="main_txt"><a href="#">제품안내</a>
+                    <li class="main_txt"><a href="brand.html">제품안내</a>
                       <ul class="sub_menu">
                           <li><a href="#">브랜드</a></li>
                           <li><a href="#">제품소개</a></li>
                       </ul>
                     </li>
-                    <li class="main_txt"><a href="#">홍보센터</a>
+                    <li class="main_txt"><a href="promotion.html">홍보센터</a>
                       <ul class="sub_menu">
                           <li><a href="#">뉴스</a></li>
                           <li><a href="#">웹진삶의향기</a></li>
@@ -71,7 +72,6 @@
       </div>
         <div class="subWrap">
           <div class="sub">
-            <img src="images/submain.png" alt="">
             <div class="sub_Txt">
                 <h2>회사소개</h2>
                 <p>생활 속에 향기를 드리는 기업, 동서식품</p>
@@ -79,27 +79,44 @@
           </div>
         </div>
         <div class="sub_nav">
-          <ul class="clearfix">
-            <li class="active"><a href="#">동서식품 소개</a></li>
-            <li><a href="#">부문역량</a></li>
-            <li><a href="#">오시는길</a></li>
+          <ul class="gnb clearfix">
+            <li class="active">동서식품 소개</li>
+            <li>부문역량</li>
+            <li>오시는길</li>
           </ul>
         </div>
-        <div class="sub_category">
-          <ul class="clearfix">
-            <li><a href="#"><img src="images/home.png" alt=""></a></li>
-            <li><img src="images/home2.png" alt=""></li>
-            <li><a href="#">회사소개</a></li>
-            <li><img src="images/home2.png" alt=""></li>
-            <li><a href="#">동서식품 소개</a></li>
-          </ul>
-        </div>
+
+
+
     </header>
-    <div class="sub_section">
+    <div class="sub_category">
+      <ul class="clearfix">
+        <li><a href="#"><img src="images/home.png" alt=""></a></li>
+        <li><img src="images/home2.png" alt=""></li>
+        <li><a href="#">회사소개</a></li>
+        <li><img src="images/home2.png" alt=""></li>
+        <li><a href="#" class="title">동서식품 소개</a></li>
+      </ul>
+    </div>
+    <!-- <div class="sub_section">
       <h3>동서식품 소개</h3>
       <img src="images/company01.png" alt="">
-    </div>
+    </div> -->
 
+    <div class="boxWrap">
+      <div class="box1">
+        <h3>동서식품 소개</h3>
+        <img src="images/company01.png" alt="">
+      </div>
+      <div class="box2">
+        <h3>부문역량</h3>
+        <img src="images/capacity.png" alt="">
+      </div>
+      <div class="box3">
+        <h3>오시는길</h3>
+        <img src="images/location.png" alt="">
+      </div>
+    </div> <!-- boxWrap -->
 
 
     <footer>
@@ -126,5 +143,23 @@
             </div> <!-- footerTxt -->
        </div> <!-- footerWrap -->
     </footer>
+
+    <script>
+      $(".boxWrap>div").hide().eq(0).show();
+      $(".gnb li").click(function(){
+        let t = $(this).index();
+
+      $(".gnb li").removeClass("active");
+      $(this).addClass("active");
+      $(".boxWrap>div").hide().eq(t).fadeIn();
+      if (t == 0){
+        $(".title").html("동서식품 소개");
+      }else if(t == 1){
+        $(".title").html("부문역량");
+      }else if (t == 2){
+        $(".title").html("오시는길");
+      }
+      });
+    </script>
 </body>
 </html>

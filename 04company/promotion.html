@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>company</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="promotion">
+      <div id="headerWrap">
+        <div id="header" class="clearfix ">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div> <!-- .logo -->
+            <div class="toggleMenu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div> <!-- .toggleMenu -->
+            <nav id="main_menu">
+                <ul class="clearfix">
+
+                    <li class="main_txt"><a href="company.html">회사소개</a>
+                      <ul class="sub_menu">
+                          <li><a href="company.html">동서식품 소개</a></li>
+                          <li><a href="#">부문역량</a></li>
+                          <li><a href="#">오시는길</a></li>
+                      </ul>
+                    </li>
+                    <li class="main_txt"><a href="brand.html">제품안내</a>
+                      <ul class="sub_menu">
+                          <li><a href="#">브랜드</a></li>
+                          <li><a href="#">제품소개</a></li>
+                      </ul>
+                    </li>
+                    <li class="main_txt"><a href="promotion.html">홍보센터</a>
+                      <ul class="sub_menu">
+                          <li><a href="#">뉴스</a></li>
+                          <li><a href="#">웹진삶의향기</a></li>
+                          <li><a href="#">커피클래스</a></li>
+                      </ul>
+                    </li>
+                    <li class="main_txt"><a href="#">사회공헌</a>
+                      <ul class="sub_menu">
+                          <li><a href="#">동서문학상</a></li>
+                          <li><a href="#">사랑의향기</a></li>
+                          <li><a href="#">꿈의도서관</a></li>
+                      </ul>
+                    </li>
+                    <li class="main_txt"><a href="#">고객의소리</a>
+                      <ul class="sub_menu">
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">일반문의</a></li>
+                          <li><a href="#">불편사항</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- #headerTop -->
+      </div>
+        <div class="subWrap">
+          <div class="sub">
+            <div class="sub_Txt">
+                <h2>홍보센터</h2>
+                <p>생활 속에 향기를 드리는 기업, 동서식품</p>
+            </div>
+          </div>
+        </div>
+        <div class="sub_nav">
+          <ul class="gnb clearfix">
+            <li class="active">뉴스</li>
+            <li>웹진삶의향기</li>
+            <li>커피클래스</li>
+          </ul>
+        </div>
+
+
+
+    </header>
+    <div class="sub_category">
+      <ul class="clearfix">
+        <li><a href="#"><img src="images/home.png" alt=""></a></li>
+        <li><img src="images/home2.png" alt=""></li>
+        <li><a href="#">홍보센터</a></li>
+        <li><img src="images/home2.png" alt=""></li>
+        <li><a href="#" class="title">뉴스</a></li>
+      </ul>
+    </div>
+    <!-- <div class="sub_section">
+      <h3>동서식품 소개</h3>
+      <img src="images/company01.png" alt="">
+    </div> -->
+
+    <div class="boxWrap">
+      <div class="box1">
+        <h3>뉴스</h3>
+        <img src="images/company01.png" alt="">
+      </div>
+      <div class="box2">
+        <h3>웹진삶의향기</h3>
+        <img src="images/capacity.png" alt="">
+      </div>
+      <div class="box3">
+        <h3>커피클래스</h3>
+        <img src="images/location.png" alt="">
+      </div>
+    </div> <!-- boxWrap -->
+
+
+    <footer>
+      <hr style="width:100%">
+        <div class="footerWrap clearfix">
+            <div class="footerLogo">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footerTxt">
+              <div class="txt01">
+                <ul class="clearfix">
+                  <li><a href="">개인정보취급방침</a></li>
+                  <li><a href="">이용약관</a></li>
+                  <li><a href="">영상정보처리기기운영관리방침</a></li>
+                </ul>
+              </div>
+              <div class="txt02">
+                <p>서울특별시 구로구 구로동 경인로 557 삼영빌딩 4층 / 대표이사: 홍길동</p>
+                <p>사업자등록번호: 123-45-67891 / 개인정보책임자:abcdefghi@example.com</p>
+                <copyright>Copyrightⓒ 도메인. All rights reserved.</copyright>
+              </div>
+            </div> <!-- footerTxt -->
+       </div> <!-- footerWrap -->
+    </footer>
+
+    <script>
+      $(".boxWrap>div").hide().eq(0).show();
+      $(".gnb li").click(function(){
+        let t = $(this).index();
+
+      $(".gnb li").removeClass("active");
+      $(this).addClass("active");
+      $(".boxWrap>div").hide().eq(t).fadeIn();
+      if (t == 0){
+        $(".title").html("뉴스");
+      }else if(t == 1){
+        $(".title").html("웹진삶의향기");
+      }else if (t == 2){
+        $(".title").html("커피클래스");
+      }
+      });
+    </script>
+</body>
+</html>
