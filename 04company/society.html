@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header class="brand">
+    <header class="society">
       <div id="headerWrap">
         <div id="header" class="clearfix ">
             <div class="logo">
@@ -73,15 +73,16 @@
         <div class="subWrap">
           <div class="sub">
             <div class="sub_Txt">
-                <h2>제품안내</h2>
+                <h2>사회공헌</h2>
                 <p>생활 속에 향기를 드리는 기업, 동서식품</p>
             </div>
           </div>
         </div>
-        <div class="brand_nav">
+        <div class="sub_nav">
           <ul class="gnb clearfix">
-            <li class="active">브랜드</li>
-            <li>제품소개</li>
+            <li class="active">동서문학상</li>
+            <li>사랑의향기</li>
+            <li>꿈의도서관</li>
           </ul>
         </div>
 
@@ -92,9 +93,9 @@
       <ul class="clearfix">
         <li><a href="#"><img src="images/home.png" alt=""></a></li>
         <li><img src="images/home2.png" alt=""></li>
-        <li><a href="#">제품안내</a></li>
+        <li><a href="#">회사소개</a></li>
         <li><img src="images/home2.png" alt=""></li>
-        <li><a href="#" class="title">브랜드</a></li>
+        <li><a href="#" class="title">동서문학상</a></li>
       </ul>
     </div>
     <!-- <div class="sub_section">
@@ -104,12 +105,16 @@
 
     <div class="boxWrap">
       <div class="box1">
-        <h3>브랜드</h3>
-        <img src="images/brandlist.png" alt="">
+        <h3>동서문학상</h3>
+        <img src="images/literaryaward.png" alt="">
       </div>
       <div class="box2">
-        <h3>제품소개</h3>
-        <img src="images/productlist.png" alt="">
+        <h3>사랑의향기</h3>
+        <img src="images/maximlove.png" alt="">
+      </div>
+      <div class="box3">
+        <h3>꿈의도서관</h3>
+        <img src="images/library.png" alt="">
       </div>
     </div> <!-- boxWrap -->
 
@@ -148,9 +153,11 @@
       $(this).addClass("active");
       $(".boxWrap>div").hide().eq(t).fadeIn();
       if (t == 0){
-        $(".title").html("브랜드");
+        $(".title").html("동서문학상");
       }else if(t == 1){
-        $(".title").html("제품소개");
+        $(".title").html("사랑의향기");
+      }else if (t == 2){
+        $(".title").html("꿈의도서관");
       }
       });
     </script>

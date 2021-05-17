@@ -140,12 +140,36 @@
 .sub_nav {width: 700px; margin: 0 auto;
           background: #F4EFE6;
           position: absolute;
-          left: 50%; top: 46%;
-          transform:translate(-50%, -46%);
+          left: 50%; transform: translateX(-50%);
+          bottom:0;
           border-bottom: 2px solid #FFC81F;}
 .sub_nav li {width: calc(700px/3);}
 .sub_section{width: 100%;}
 .sub_section img {width: 100%;}
 
+.boxWrap {width: 100%; margin: 0 auto;}
+.boxWrap h3 {text-align: center; margin-bottom: 20px;}
+.boxWrap h3:before {content:"";
+                      display: block;
+                      width: 50px; height: 2px;
+                      background: #ffc81f;
+                      margin: 20px auto;}
+.boxWrap img {width: 100%; display: block;
+              margin-bottom: 20px;}
 
+              
 /* brand */
+.brand_nav {width: 700px;
+          background: #F4EFE6;
+          position: absolute;
+          left: 50%; transform: translateX(-50%);
+          bottom:0;
+          border-bottom: 2px solid #FFC81F;}
+.brand_nav li {float: left;
+            width: calc(700px/2);
+            line-height: 50px;
+            border-right: 1px solid #ddd;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;}

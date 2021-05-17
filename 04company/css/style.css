@@ -332,7 +332,17 @@ header.promotion {background-image: url(../images/promotion.png);
                   background-size: cover;
                   width: 100%;}
 
+/* society */
+header.society {background-image: url(../images/societymain.png);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;}
 
+/* cs */
+header.cs {background-image: url(../images/csmain.png);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;}
 /* margin */
 .mb10 {margin-bottom: 10px;}
 .mb20 {margin-bottom: 20px;}
