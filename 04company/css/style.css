@@ -74,6 +74,7 @@ header{position: relative;}
 /* content */
 .content {position: relative;
           height: 620px; margin-bottom: 60px;}
+
 .content .contList {width: 1240px;
                     margin: 0 auto;
                     display: flex;
