@@ -20,7 +20,8 @@
                       align-items: center;
                       transition: .3s;
                       background:#F4EFE6;}
-  #header #main_menu .main_txt {_background: pink;}
+  #header #main_menu .main_txt {}
+  #header #main_menu .main_txt a {display: block;}
   #header #main_menu .sub_menu{display: none;}
   #main_menu li {float:none}
   /* toggleMenu */
@@ -157,7 +158,7 @@
 .boxWrap img {width: 100%; display: block;
               margin-bottom: 20px;}
 
-              
+
 /* brand */
 .brand_nav {width: 700px;
           background: #F4EFE6;

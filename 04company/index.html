@@ -8,15 +8,19 @@
     <title>company</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/wow.js"></script>
 </head>
-
+<script>
+  new WOW().init();
+</script>
 <body>
     <header>
         <div id="headerWrap">
@@ -35,36 +39,36 @@
                   <ul class="clearfix">
                       <li class="main_txt"><a href="company.html">회사소개</a>
                         <ul class="sub_menu">
-                            <li><a href="#">동서식품 소개</a></li>
-                            <li><a href="#">부문역량</a></li>
-                            <li><a href="#">오시는길</a></li>
+                            <li><a href="company.html?ms=0">동서식품 소개</a></li>
+                            <li><a href="company.html?ms=1">부문역량</a></li>
+                            <li><a href="company.html?ms=2">오시는길</a></li>
                         </ul>
                       </li>
                       <li class="main_txt"><a href="brand.html">제품안내</a>
                         <ul class="sub_menu">
-                            <li><a href="#">브랜드</a></li>
-                            <li><a href="#">제품소개</a></li>
+                            <li><a href="brand.html?ms=0">브랜드</a></li>
+                            <li><a href="brand.html?ms=1">제품소개</a></li>
                         </ul>
                       </li>
                       <li class="main_txt"><a href="promotion.html">홍보센터</a>
                         <ul class="sub_menu">
-                            <li><a href="#">뉴스</a></li>
-                            <li><a href="#">웹진삶의향기</a></li>
-                            <li><a href="#">커피클래스</a></li>
+                            <li><a href="promotion.html?ms=0">뉴스</a></li>
+                            <li><a href="promotion.html?ms=1">웹진삶의향기</a></li>
+                            <li><a href="promotion.html?ms=2">커피클래스</a></li>
                         </ul>
                       </li>
                       <li class="main_txt"><a href="society.html">사회공헌</a>
                         <ul class="sub_menu">
-                            <li><a href="#">동서문학상</a></li>
-                            <li><a href="#">사랑의향기</a></li>
-                            <li><a href="#">꿈의도서관</a></li>
+                            <li><a href="society.html?ms=0">동서문학상</a></li>
+                            <li><a href="society.html?ms=1">사랑의향기</a></li>
+                            <li><a href="society.html?ms=2">꿈의도서관</a></li>
                         </ul>
                       </li>
                       <li class="main_txt"><a href="cs.html">고객의소리</a>
                         <ul class="sub_menu">
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">일반문의</a></li>
-                            <li><a href="#">불편사항</a></li>
+                            <li><a href="cs.html?ms=0">FAQ</a></li>
+                            <li><a href="cs.html?ms=1">일반문의</a></li>
+                            <li><a href="cs.html?ms=2">불편사항</a></li>
                         </ul>
                       </li>
                   </ul>
@@ -98,11 +102,15 @@
                 </a>
             </li>
             <li>
-                <a href="#"><img src="images/icon02.png" alt="icon02">
+                <a href="promotion.html"><img src="images/icon02.png" alt="icon02">
                     <p>뉴스</p>
                 </a>
             </li>
-            <li><div class="titleTxt">
+            <li>
+              <a href="https://www.youtube.com/embed/9zg8NXMo5zw" class="youtube" title="영상">
+                <img src="images/banner_btn.png" alt="">
+              </a>
+              <div class="titleTxt">
               <h2>/ RECIPE</h2>
               <p>동서식품의 제품들을 즐기는 다양한 방법</p>
             </div></li>
@@ -111,22 +119,22 @@
               <p>도심 속 정원, 숲 속 커피 공장 맥심 브랜드 플래그쉽 스토어</p>
             </div></li>
             <li>
-                <a href="#"><img src="images/icon03.png" alt="icon03">
+                <a href="promotion.html?ms=2"><img src="images/icon03.png" alt="icon03">
                     <p>커피클래스</p>
                 </a>
             </li>
             <li>
-                <a href="#"><img src="images/icon04.png" alt="icon04">
+                <a href="promotion.html?ms=1"><img src="images/icon04.png" alt="icon04">
                     <p>웹진</p>
                 </a>
             </li>
             <li>
-                <a href="#"><img src="images/icon05.png" alt="icon05">
+                <a href="society.html"><img src="images/icon05.png" alt="icon05">
                     <p>사회공헌</p>
                 </a>
             </li>
             <li>
-                <a href="#"><img src="images/icon06.png" alt="icon06">
+                <a href="company.html?ms=1"><img src="images/icon06.png" alt="icon06">
                     <p>연혁</p>
                 </a>
             </li>
@@ -146,7 +154,7 @@
             <h3>비전</h3>
             <p>VISION 2021</p>
             <ul class="clearfix">
-                <li onclick="location.href='https://www.naver.com'">
+                <li>
                     <div class="card">
                         <img src="images/vicon01.png" alt="화이트" class="img1">
                         <img src="images/vicom01_1.png" alt="검정" class="img2">
@@ -303,5 +311,7 @@
             </div> <!-- footerTxt -->
        </div> <!-- footerWrap -->
     </footer>
+
+      <div class="top view">TOP</div>
 </body>
 </html>

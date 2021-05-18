@@ -34,36 +34,36 @@
 
                     <li class="main_txt"><a href="company.html">회사소개</a>
                       <ul class="sub_menu">
-                          <li><a href="company.html">동서식품 소개</a></li>
-                          <li><a href="#">부문역량</a></li>
-                          <li><a href="#">오시는길</a></li>
+                        <li><a href="company.html?ms=0">동서식품 소개</a></li>
+                        <li><a href="company.html?ms=1">부문역량</a></li>
+                        <li><a href="company.html?ms=2">오시는길</a></li>
                       </ul>
                     </li>
                     <li class="main_txt"><a href="brand.html">제품안내</a>
                       <ul class="sub_menu">
-                          <li><a href="#">브랜드</a></li>
-                          <li><a href="#">제품소개</a></li>
+                        <li><a href="brand.html?ms=0">브랜드</a></li>
+                        <li><a href="brand.html?ms=1">제품소개</a></li>
                       </ul>
                     </li>
                     <li class="main_txt"><a href="promotion.html">홍보센터</a>
                       <ul class="sub_menu">
-                          <li><a href="#">뉴스</a></li>
-                          <li><a href="#">웹진삶의향기</a></li>
-                          <li><a href="#">커피클래스</a></li>
+                        <li><a href="promotion.html?ms=0">뉴스</a></li>
+                        <li><a href="promotion.html?ms=1">웹진삶의향기</a></li>
+                        <li><a href="promotion.html?ms=2">커피클래스</a></li>
                       </ul>
                     </li>
                     <li class="main_txt"><a href="society.html">사회공헌</a>
                       <ul class="sub_menu">
-                          <li><a href="#">동서문학상</a></li>
-                          <li><a href="#">사랑의향기</a></li>
-                          <li><a href="#">꿈의도서관</a></li>
+                        <li><a href="society.html?ms=0">동서문학상</a></li>
+                        <li><a href="society.html?ms=1">사랑의향기</a></li>
+                        <li><a href="society.html?ms=2">꿈의도서관</a></li>
                       </ul>
                     </li>
                     <li class="main_txt"><a href="cs.html">고객의소리</a>
                       <ul class="sub_menu">
-                          <li><a href="#">FAQ</a></li>
-                          <li><a href="#">일반문의</a></li>
-                          <li><a href="#">불편사항</a></li>
+                        <li><a href="cs.html?ms=0">FAQ</a></li>
+                        <li><a href="cs.html?ms=1">일반문의</a></li>
+                        <li><a href="cs.html?ms=2">불편사항</a></li>
                       </ul>
                     </li>
                 </ul>
@@ -145,13 +145,9 @@
     </footer>
 
     <script>
-      $(".boxWrap>div").hide().eq(0).show();
-      $(".gnb li").click(function(){
-        let t = $(this).index();
+    $(".gnb li").click(function(){
+   let t = $(this).index();
 
-      $(".gnb li").removeClass("active");
-      $(this).addClass("active");
-      $(".boxWrap>div").hide().eq(t).fadeIn();
       if (t == 0){
         $(".title").html("동서문학상");
       }else if(t == 1){

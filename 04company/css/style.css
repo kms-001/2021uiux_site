@@ -90,6 +90,7 @@ header{position: relative;}
 .content .contList>li:nth-child(3){width: 50%;
                                   background-image: url(../images/banner01.png);
                                   cursor: pointer; order:3;}
+.content .contList>li:nth-child(3) a {display: block;}
 .content .contList>li:nth-child(4){width: 50%;
                                   background-image: url(../images/banner02.png);
                                   cursor: pointer; order:4;}
@@ -161,7 +162,7 @@ header{position: relative;}
                         align-items: center;}
 .section2 .snsList>li:nth-child(1) {height: 620px; background: #2E4D8E; order:1}
 .section2 .snsList>li:nth-child(2) {order:2}
-.section2 .snsList>li:nth-child(3) {background: #fff; order:3}
+.section2 .snsList>li:nth-child(3) {background: #F4EFE6; order:3}
 .section2 .snsList>li:nth-child(4) {order:4}
 .section2 .snsList>li:nth-child(5) {position: absolute; width: 310px;
                                     top:310px; left:310px; background: #F4EFE6; order:5}
@@ -244,7 +245,17 @@ header{position: relative;}
                          color:#333;}
 .footerWrap .txt02 {color:#BEB5AA}
 
+/* top */
+.top{position: fixed; width: 80px; height: 80px;
+     background: #F4EFE6; right: 50px; bottom: 50px;
+     border-radius: 50px; display: flex; justify-content: center;
+     align-items: center; cursor:pointer; transition:.3s;
+     animation:viewTop 1s infinite alternate; opacity: 0;}
+.top.view{opacity: 1;}
 
+@keyframes viewTop {
+  to{transform:translateY(-20px)}
+}
 
 /* company */
 header {background-image: url(../images/submain.png);
@@ -343,6 +354,10 @@ header.cs {background-image: url(../images/csmain.png);
                   background-repeat: no-repeat;
                   background-size: cover;
                   width: 100%;}
+
+
+
+
 /* margin */
 .mb10 {margin-bottom: 10px;}
 .mb20 {margin-bottom: 20px;}
