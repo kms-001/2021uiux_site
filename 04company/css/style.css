@@ -62,8 +62,8 @@ header{position: relative;}
                           background-position: center;
                           background-size:cover;
                           height: 1000px;}
-.sliderWrap li.slider1st {background-image: url(../images/main01.jpg);}
-.sliderWrap li.slider2st {background-image: url(../images/main02.jpg);}
+.sliderWrap li.slider1st {background-image: url(../images/main1.jpg);}
+.sliderWrap li.slider2st {background-image: url(../images/main2.jpg);}
 .sliderWrap .slider_txt h1 {font-size:50px; margin-bottom: 20px; text-shadow: 1px 1px 1px #333;}
 .sliderWrap .slider_txt {position: absolute;
                           left: 50%; top: 40%;

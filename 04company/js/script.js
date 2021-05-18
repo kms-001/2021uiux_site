@@ -57,6 +57,7 @@ $(document).ready(function(){
     $("html,body").animate({scrollTop:0},1000);
   });
 
+// 영상
   $(".youtube").colorbox({
     iframe:true,
     innerWidth:700,
