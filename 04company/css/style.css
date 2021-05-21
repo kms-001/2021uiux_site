@@ -5,7 +5,7 @@ header{position: relative;}
 #header{width: 1240px;
         z-index: 9999;
         position: fixed;
-        left: 50%; top: 20px;
+        left: 50%; top: 0;
         transform: translateX(-50%);
         background: #fff;}
 #header .logo {position: absolute; top:5px}
