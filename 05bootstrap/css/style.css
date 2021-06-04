@@ -40,9 +40,10 @@ a:hover{color:var(--primary-color) !important}
 .service .card:hover {transform:scale(1.1); box-shadow:var(--box-shadow)}
 .service .card .card-body .card-title {font-weight: bold; color:var(--primary-color)!important}
 
-.gnb .active {color:var(--secondary-color);}
+.gnb .active {color:var(--secondary-color); font-weight: bold}
 .gnb li {margin-right: 30px;}
 .contents  {background: var(--primary-color);
             height: 600px;}
 .contents .boxTxt div{display: none;}
 .contents .boxTxt div:nth-child(1) {display: block;}
+.contents .boxImg img {width: 298px;}
