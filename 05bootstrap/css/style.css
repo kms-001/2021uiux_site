@@ -29,6 +29,8 @@ a:hover{color:var(--primary-color) !important}
                              color:#fff;
                              font-weight: bold;
                              border-radius: 25px}
+
+/* 서비스 부분 */
 .service h2.title-txt02:after {content:"";
                               display: block;
                               width: 200px; height: 2px;
