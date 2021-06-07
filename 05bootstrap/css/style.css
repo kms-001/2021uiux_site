@@ -29,7 +29,6 @@ a:hover{color:var(--primary-color) !important}
                              color:#fff;
                              font-weight: bold;
                              border-radius: 25px}
-
 .service h2.title-txt02:after {content:"";
                               display: block;
                               width: 200px; height: 2px;
@@ -40,10 +39,69 @@ a:hover{color:var(--primary-color) !important}
 .service .card:hover {transform:scale(1.1); box-shadow:var(--box-shadow)}
 .service .card .card-body .card-title {font-weight: bold; color:var(--primary-color)!important}
 
+/* 펫시터 소개 부분 */
 .gnb .active {color:var(--secondary-color); font-weight: bold}
 .gnb li {margin-right: 30px;}
 .contents  {background: var(--primary-color);
             height: 600px;}
-.contents .boxTxt div{display: none;}
+.contents .title-txt03{color:var(--secondary-color);}
+.contents .boxTxt div{display: none; color:var(--secondary-color)}
 .contents .boxTxt div:nth-child(1) {display: block;}
-.contents .boxImg img {width: 298px;}
+.contents .boxImg img {width: 288px;}
+.contents .btn {background:var(--secondary-color);
+                color:var(--primary-color);
+                font-weight: bold;
+                border-radius: 25px}
+
+/* 예약 부분 */
+.reservation h2.title-txt02:after {content:"";
+                               display: block;
+                               width: 200px; height: 2px;
+                               background: var(--primary-color);
+                               margin: 10px auto;}
+
+.reservation .card {border-radius: 22px;}
+.reservation .card .card-body .btn{background:var(--primary-color);
+                                     color:#fff;
+                                     font-weight: bold;
+                                     border-radius: 25px}
+.reservation .card .card-body .card-title,
+.reservation .card .card-body .card-text {color:var(--font-color-1st)}
+.reservation .card .card-body .card-title {font-weight: bold}
+.reservation .card .card-body .card-text:after{content:"";
+                                             display: block;
+                                             width: 300px; height: 1px;
+                                             background:var(--font-color-1st);
+                                             margin: 15px auto;}
+.reservation .card .card-body .money-txt {color: var(--primary-color)}
+
+/* 펫시터 지원 부분 */
+.contents02 {background: var(--primary-color);
+             height: 550px; position: relative;}
+.contents02 .title-txt04{color:var(--secondary-color);}
+.contents02 .title-txt04 h3 {font-size:45px}
+.contents02 .title-txt04 h1 {font-size:60px}
+.contents02 .title-txt04 h2 {font-size:30px}
+.contents02 .container p {color:var(--secondary-color);}
+.contents02 .btn {background:var(--secondary-color);
+                color:var(--primary-color);
+                font-weight: bold;
+                border-radius: 25px}
+.contents02 img{width: 450px; position: absolute; bottom: 0; right: 210px;}
+
+/* 푸터 */
+.footer .row img {width: 110px;}
+.footer p {color:var(--font-color-2st)}
+
+
+/* 모바일 */
+  @media screen and (max-width:756px){
+.contents  {background: var(--primary-color);
+            height: 400px;}
+.contents .boxImg img {display: none;}
+.reservation .card .card-body .card-text:after{content:"";
+                                             display: block;
+                                             width: 300px; height: 1px;
+                                             background:var(--font-color-1st);
+                                             margin: 15px auto;}
+}
