@@ -87,7 +87,7 @@ a:hover{color:var(--primary-color) !important}
                 color:var(--primary-color);
                 font-weight: bold;
                 border-radius: 25px}
-.contents02 img{width: 450px; position: absolute; bottom: 0; right: 210px;}
+.contents02 img{width: 450px; position: absolute; bottom: 0; right: 400px;}
 
 /* 푸터 */
 .footer .row img {width: 110px;}
