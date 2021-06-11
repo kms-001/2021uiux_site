@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+        --bg-color-1st:#F6F5EF;
+        --bg-color-2st:#1E3932;
+        --bg-color-3st:#F6F6F6;
+        --bg-color-4st:#3A383A;
+
+        --box-color-1st:#00704A;
+        --box-color-2st:#025964;
+        --box-color-3st:#815932;
+
+        --font-color-1st:#81899B;
+        --font-color-2st:#333333;
+        --font-color-3st:#2C2A29;
+}
+
+/* header */
+.headerWrap {background: var(--bg-color-1st);}
+.headerWrap .navbar {background: var(--bg-color-1st);}
+.headerWrap .navbar-brand img {width: 70px; height: 70px;}
+.collapse .navbar-nav .nav-item a {color:var(--font-color-3st)}
+.collapse .navbar-nav .nav-item a:hover {color:var(--box-color-1st);}
+
+
+/* section */
+.section{background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;}
+.section.page1 {background-image: url(../images/home_bg.png);}
+.section.page2 {background-image: url(../images/reward-bg.png);}
+.section.page3 {background-image: url(../images/coffee-bg.png);}
+.section.page4 {background-image: url(../images/reserve-bg.png);}
+
+#fp-nav.right{right: 50px}
+.fp-tooltip.right{right:20px}
+
+#fullpage .container .home {position: absolute;
+                            top:200px; float:left}
+#fullpage .container .btn {background:var(--bg-color-4st);
+                           color:var(--bg-color-3st);
+                           font-weight: bold;
+                           border-radius: 25px;}
+#fullpage .container .menu .menu_1st {position: absolute; top:300px; right: 700px;
+                                     opacity:0; transition: .7s; transform: translateY(-100px);}
+#fullpage .container .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
+
+#fullpage .container .menu .menu_2st {position: absolute; top:250px; right: 470px;}
+#fullpage .container .menu .menu_2st.end { }
+
+#fullpage .container .menu .menu_3st {position: absolute; top:400px; right: 200px;}
+#fullpage .container .menu .menu_3st.end {}

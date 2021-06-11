@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STARBUCKS FULLPAGE</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- js -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          $("#fullpage").fullpage({
+              menu:".topMenu",
+              anchors:['1st','2st','3st','4st','5st'],
+              navigation:true,
+              navigationTooltips:['HOME','REWARD','COFFEE','RESERVE','NEWS'],
+              showActiveTooltip:true,
+              afterLoad:function(anchorslink,index){
+               if(index == 1){
+                 $(".menu_1st").addClass("end");
+               }else{
+                 $(".menu_1st").removeClass("end");
+               }
+               
+              }
+          })
+      });
+  </script>
+
+</head>
+<body>
+
+  <header class="headerWrap fixed-top py-md-0">
+    <div class="container px-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="로고" class="img-fluid">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item pr-5 active ">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="#">REWARD</a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="#">COFFEE</a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="#">RESERVE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEWS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="fullpage">
+    <div class="section page1" data-anchor="1st">
+      <div class="container">
+        <div class="home d-flex flex-column justify-content-center align-items-center align-items-md-start">
+          <img src="images/hometxt.png" alt="home txt" class="mb-3">
+          <div class="btn px-4 py-2 m-auto">앱 설치하기</div>
+        </div>
+        <div class="menu">
+          <div class="menu_1st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <img src="images/home1.png" alt="" class="m-3">
+            <img src="images/home1-1.png" alt="">
+          </div>
+          <div class="menu_2st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <img src="images/home2.png" alt="" class="m-3">
+            <img src="images/home2-2.png" alt="">
+          </div>
+          <div class="menu_3st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <img src="images/home3.png" alt="" class="m-3">
+            <img src="images/home3-3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section page2" data-anchor="2st"></div>
+    <div class="section page3" data-anchor="3st"></div>
+    <div class="section page4" data-anchor="4st"></div>
+    <div class="section page5" data-anchor="5st"></div>
+  </div>
+
+<<script>
+
+</script>
+
+
+</body>
+</html>
