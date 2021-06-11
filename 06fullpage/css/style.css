@@ -45,8 +45,10 @@
                                      opacity:0; transition: .7s; transform: translateY(-100px);}
 #fullpage .container .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
 
-#fullpage .container .menu .menu_2st {position: absolute; top:250px; right: 470px;}
-#fullpage .container .menu .menu_2st.end { }
+#fullpage .container .menu .menu_2st {position: absolute; top:300px; right: 470px;
+                                      opacity:0; transition: .7s; transform: translateY(-100px);}
+#fullpage .container .menu .menu_2st.end {opacity:1; transform:translateY(10px);}
 
-#fullpage .container .menu .menu_3st {position: absolute; top:400px; right: 200px;}
-#fullpage .container .menu .menu_3st.end {}
+#fullpage .container .menu .menu_3st {position: absolute; top:400px; right: 200px;
+                                      opacity:0; transition: .7s; transform: translateY(-100px);;}
+#fullpage .container .menu .menu_3st.end {opacity:1; transform:translateY(10px);}
