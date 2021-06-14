@@ -43,15 +43,15 @@
                     color:var(--bg-color-3st);
                     font-weight: bold;
                     border-radius: 25px;}
-.section.page1 .menu .menu_1st {position: absolute; top:-200px; right: 40px;
+.section.page1 .menu .menu_1st {position: absolute; top:-200px; right: 300px;
                                 opacity:0; transition: .7s; transform: translateY(-100px);}
 .section.page1 .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
 
-.section.page1 .menu .menu_2st {position: absolute; top:-200px; right: 47px;
+.section.page1 .menu .menu_2st {position: absolute; top:-220px; right: 90px;
                                 opacity:0; transition: .7s; transform: translateY(-100px);}
 .section.page1 .menu .menu_2st.end {opacity:1; transform:translateY(10px);}
 
-.section.page1 .menu .menu_3st {position: absolute; top:-200px; right: 20px;
+.section.page1 .menu .menu_3st {position: absolute; top:-100px; right: -150px;
                                 opacity:0; transition: .7s; transform: translateY(-100px);}
 .section.page1 .menu .menu_3st.end {opacity:1; transform:translateY(10px);}
 
