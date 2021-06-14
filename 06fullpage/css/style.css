@@ -9,6 +9,7 @@
         --box-color-1st:#00704A;
         --box-color-2st:#025964;
         --box-color-3st:#815932;
+        --box-color-4st:#1E3932;
 
         --font-color-1st:#81899B;
         --font-color-2st:#333333;
@@ -31,24 +32,37 @@
 .section.page2 {background-image: url(../images/reward-bg.png);}
 .section.page3 {background-image: url(../images/coffee-bg.png);}
 .section.page4 {background-image: url(../images/reserve-bg.png);}
-
 #fp-nav.right{right: 50px}
 .fp-tooltip.right{right:20px}
 
-#fullpage .container .home {position: absolute;
-                            top:200px; float:left}
-#fullpage .container .btn {background:var(--bg-color-4st);
-                           color:var(--bg-color-3st);
-                           font-weight: bold;
-                           border-radius: 25px;}
-#fullpage .container .menu .menu_1st {position: absolute; top:300px; right: 700px;
-                                     opacity:0; transition: .7s; transform: translateY(-100px);}
-#fullpage .container .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
+/* home */
+.section.page1 .container{position: relative;}
+.section.page1 .home {position: absolute;
+                      top:-200px;}
+.section.page1 .btn {background:var(--bg-color-4st);
+                    color:var(--bg-color-3st);
+                    font-weight: bold;
+                    border-radius: 25px;}
+.section.page1 .menu .menu_1st {position: absolute; top:-200px; right: 40px;
+                                opacity:0; transition: .7s; transform: translateY(-100px);}
+.section.page1 .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
 
-#fullpage .container .menu .menu_2st {position: absolute; top:300px; right: 470px;
-                                      opacity:0; transition: .7s; transform: translateY(-100px);}
-#fullpage .container .menu .menu_2st.end {opacity:1; transform:translateY(10px);}
+.section.page1 .menu .menu_2st {position: absolute; top:-200px; right: 47px;
+                                opacity:0; transition: .7s; transform: translateY(-100px);}
+.section.page1 .menu .menu_2st.end {opacity:1; transform:translateY(10px);}
 
-#fullpage .container .menu .menu_3st {position: absolute; top:400px; right: 200px;
-                                      opacity:0; transition: .7s; transform: translateY(-100px);;}
-#fullpage .container .menu .menu_3st.end {opacity:1; transform:translateY(10px);}
+.section.page1 .menu .menu_3st {position: absolute; top:-200px; right: 20px;
+                                opacity:0; transition: .7s; transform: translateY(-100px);}
+.section.page1 .menu .menu_3st.end {opacity:1; transform:translateY(10px);}
+
+
+/* reward */
+.btn.bg-scolor{background: var(--box-color-1st);}
+.section.page2 .reward_txt .btn {font-weight: bold;
+                                border-radius: 25px;}
+
+
+
+@media screen and (max-width:1000px){
+.section.page1 .home{position: relative; top:-100px;}
+}

@@ -44,18 +44,18 @@
 
   <header class="headerWrap fixed-top py-md-0">
     <div class="container px-0">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="로고" class="img-fluid">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item pr-5 active ">
+            <li class="nav-item active pr-5">
               <a class="nav-link" href="#">HOME</a>
             </li>
             <li class="nav-item pr-5">
@@ -72,6 +72,7 @@
             </li>
           </ul>
         </div>
+
       </nav>
     </div>
   </header>
@@ -79,28 +80,41 @@
   <div id="fullpage">
     <div class="section page1" data-anchor="1st">
       <div class="container">
-        <div class="home d-flex flex-column justify-content-center align-items-center align-items-md-start">
-          <img src="images/hometxt.png" alt="home txt" class="mb-3">
-          <div class="btn px-4 py-2 m-auto">앱 설치하기</div>
+        <div class="home w-40 text-center m-auto">
+          <img src="images/hometxt.png" alt="home txt" class="mb-3"><br>
+          <div class="btn px-4 py-2">앱 설치하기</div>
         </div>
         <div class="menu">
-          <div class="menu_1st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <img src="images/home1.png" alt="" class="m-3">
-            <img src="images/home1-1.png" alt="">
-          </div>
-          <div class="menu_2st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <img src="images/home2.png" alt="" class="m-3">
-            <img src="images/home2-2.png" alt="">
-          </div>
-          <div class="menu_3st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <img src="images/home3.png" alt="" class="m-3">
-            <img src="images/home3-3.png" alt="">
-          </div>
+            <div class="menu_1st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
+              <img src="images/home1.png" alt="menu" class="m-3">
+              <img src="images/home1-1.png" alt="menu name">
+            </div>
+            <div class="menu_2st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
+              <img src="images/home2.png" alt="menu" class="m-3">
+              <img src="images/home2-2.png" alt="menu name">
+            </div>
+            <div class="menu_3st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
+              <img src="images/home3.png" alt="menu" class="m-3">
+              <img src="images/home3-3.png" alt="menu name">
+            </div>
         </div>
       </div>
     </div>
 
-    <div class="section page2" data-anchor="2st"></div>
+    <div class="section page2" data-anchor="2st">
+      <div class="container">
+        <div class="reward d-flex ">
+          <img src="images/rewards-logo 1.png" alt="reward-logo">
+        </div>
+        <div class="reward_txt">
+          <h4>스타벅스만의 특별한 혜택,<br>스타벅스 리워드</h4>
+          <div class="btn bg-scolor px-4 py-2 m-auto">회원가입</div>
+          <div class="btn btn-outline-light px-4 py-2 m-auto">로그인</div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="section page3" data-anchor="3st"></div>
     <div class="section page4" data-anchor="4st"></div>
     <div class="section page5" data-anchor="5st"></div>
