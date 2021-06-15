@@ -32,10 +32,12 @@
 .section.page2 {background-image: url(../images/reward-bg.png);}
 .section.page3 {background-image: url(../images/coffee-bg.png);}
 .section.page4 {background-image: url(../images/reserve-bg.png);}
-#fp-nav.right{right: 50px}
-.fp-tooltip.right{right:20px}
 
-/* home */
+#fp-nav.right{right: 50px; display: none;}
+.fp-tooltip.right{right:20px;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {display: none;}
+
+/* home .section.page1 */
 .section.page1 .container{position: relative;}
 .section.page1 .home {position: absolute;
                       top:-200px;}
@@ -43,7 +45,7 @@
                     color:var(--bg-color-3st);
                     font-weight: bold;
                     border-radius: 25px;}
-.section.page1 .menu .menu_1st {position: absolute; top:-200px; right: 300px;
+.section.page1 .menu .menu_1st {position: absolute; top:-200px; right: 280px;
                                 opacity:0; transition: .7s; transform: translateY(-100px);}
 .section.page1 .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
 
@@ -56,13 +58,28 @@
 .section.page1 .menu .menu_3st.end {opacity:1; transform:translateY(10px);}
 
 
-/* reward */
-.btn.bg-scolor{background: var(--box-color-1st);}
+/* reward .section.page2 */
+.section.page2 .btn.bg-scolor{background: var(--box-color-1st);
+                             color:var(--bg-color-1st)}
+.section.page2 .reward_txt h4 {color:var(--bg-color-1st)}
 .section.page2 .reward_txt .btn {font-weight: bold;
                                 border-radius: 25px;}
+.section.page2 .reward_txt .line {position: relative;
+                                 margin-bottom: 22px;
+                                 border-bottom: 1px solid #4b615b}
+
+/* coffee .section.page3 */
+.section.page3 .coffee_txt {position: absolute;
+                            top:50%;}
+.section.page3 .coffee_txt .btn.bg-bcolor {background: var(--box-color-2st);
+                                          color:var(--bg-color-1st);
+                                          border-radius: 25px}
+.section.page3 .coffee img {transform: translateY(50px);}
+
+/* coffee .section.page4 */
 
 
-
+/* width 1000px */
 @media screen and (max-width:1000px){
 .section.page1 .home{position: relative; top:-100px;}
 }

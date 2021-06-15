@@ -55,20 +55,20 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active pr-5">
-              <a class="nav-link" href="#">HOME</a>
+            <li data-menuanchor="1st" class="nav-item active pr-5">
+              <a class="nav-link" href="#1st">HOME</a>
             </li>
-            <li class="nav-item pr-5">
-              <a class="nav-link" href="#">REWARD</a>
+            <li data-menuanchor="2st" class="nav-item pr-5">
+              <a class="nav-link" href="#2st">REWARD</a>
             </li>
-            <li class="nav-item pr-5">
-              <a class="nav-link" href="#">COFFEE</a>
+            <li data-menuanchor="3st" class="nav-item pr-5">
+              <a class="nav-link" href="#3st">COFFEE</a>
             </li>
-            <li class="nav-item pr-5">
-              <a class="nav-link" href="#">RESERVE</a>
+            <li data-menuanchor="4st" class="nav-item pr-5">
+              <a class="nav-link" href="#4st">RESERVE</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NEWS</a>
+            <li data-menuanchor="5st" class="nav-item">
+              <a class="nav-link" href="#5st">NEWS</a>
             </li>
           </ul>
         </div>
@@ -85,17 +85,17 @@
           <div class="btn px-4 py-2">앱 설치하기</div>
         </div>
         <div class="menu">
-            <div class="menu_1st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
-              <img src="images/home1.png" alt="menu" class="m-3">
-              <img src="images/home1-1.png" alt="menu name">
+            <div class="menu_1st d-flex flex-column justify-content-center align-items-center align-items-md-start">
+              <img src="images/home1.png" alt="menu" class="m-3 img-fluid">
+              <img src="images/home1-1.png" alt="menu name" class="img-fluid">
             </div>
             <div class="menu_2st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
-              <img src="images/home2.png" alt="menu" class="m-3">
-              <img src="images/home2-2.png" alt="menu name">
+              <img src="images/home2.png" alt="menu" class="m-3 img-fluid">
+              <img src="images/home2-2.png" alt="menu name" class="img-fluid">
             </div>
             <div class="menu_3st  d-flex flex-column justify-content-center align-items-center align-items-md-start">
-              <img src="images/home3.png" alt="menu" class="m-3">
-              <img src="images/home3-3.png" alt="menu name">
+              <img src="images/home3.png" alt="menu" class="m-3 img-fluid">
+              <img src="images/home3-3.png" alt="menu name" class="img-fluid">
             </div>
         </div>
       </div>
@@ -103,20 +103,46 @@
 
     <div class="section page2" data-anchor="2st">
       <div class="container">
-        <div class="reward d-flex ">
-          <img src="images/rewards-logo 1.png" alt="reward-logo">
+        <div class="reward float-left">
+          <img src="images/rewards-logo 1.png" alt="reward-logo" class="py-5 img-fluid">
         </div>
-        <div class="reward_txt">
-          <h4>스타벅스만의 특별한 혜택,<br>스타벅스 리워드</h4>
-          <div class="btn bg-scolor px-4 py-2 m-auto">회원가입</div>
-          <div class="btn btn-outline-light px-4 py-2 m-auto">로그인</div>
+        <div class="reward_txt float-right py-3">
+          <div class="line py-4">
+          <h4 class="py-2">스타벅스만의 특별한 혜택,<br><strong>스타벅스 리워드</strong></h4>
+          <div class="btn bg-scolor px-4 py-2 mr-4">회원가입</div>
+          <div class="btn btn-outline-light px-4 py-2">로그인</div>
+          </div>
+          <h4 class="py-2">회원 가입 후,<br>스타벅스 e-Gift Card를<br><strong>"나에게 선물하기"</strong>로 구매하시고,<br>편리하게 등록하세요!</h4>
+          <div class="btn btn-outline-light px-5 py-2 m-auto">e-Gift Card 선물하기</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section page3" data-anchor="3st">
+      <div class="container">
+        <div class="coffee_txt float-left d-flex flex-column justify-content-center align-items-center">
+          <img src="images/coffee1-1.png" alt="coffee" class="mb-3 img-fluid">
+          <div class="btn bg-bcolor px-4 py-2">자세히보기</div>
+        </div>
+        <div class="coffee float-right">
+          <img src="images/coffee1.png" alt="coffee" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="section page4" data-anchor="4st">
+      <div class="container">
+        <div class="reserve float-left">
+          <img src="images/reserve_visual_pc 1.png" alt="">
+        </div>
+        <div class="reserve_txt float-right">
+          <img src="images/reserve1.png" alt="" class="d-flex">
+          <img src="images/reserve1-1.png" alt="">
         </div>
       </div>
     </div>
 
 
-    <div class="section page3" data-anchor="3st"></div>
-    <div class="section page4" data-anchor="4st"></div>
     <div class="section page5" data-anchor="5st"></div>
   </div>
 
