@@ -27,12 +27,19 @@
               afterLoad:function(anchorslink,index){
                if(index == 1){
                  $(".menu_1st").addClass("end");
-                 $(".menu_2st").addClass("end");
-                 $(".menu_3st").addClass("end");
+                 $(".menu_2st").delay(300).addClass("end");
+                 $(".menu_3st").delay(500).addClass("end");
                }else{
                  $(".menu_1st").removeClass("end");
                  $(".menu_2st").removeClass("end");
                  $(".menu_3st").removeClass("end");
+               }
+               if(index == 3){
+                 $(".coffee_txt").addClass("end");
+                 $(".coffee").addClass("end");
+               }else{
+                 $(".coffee_txt").removeClass("end");
+                 $(".coffee").removeClass("end");
                }
               }
           })
@@ -77,6 +84,7 @@
     </div>
   </header>
 
+
   <div id="fullpage">
     <div class="section page1" data-anchor="1st">
       <div class="container">
@@ -101,6 +109,7 @@
       </div>
     </div>
 
+
     <div class="section page2" data-anchor="2st">
       <div class="container">
         <div class="reward float-left">
@@ -118,11 +127,13 @@
       </div>
     </div>
 
+
     <div class="section page3" data-anchor="3st">
       <div class="container">
         <div class="coffee_txt float-left d-flex flex-column justify-content-center align-items-center">
           <img src="images/coffee1-1.png" alt="coffee" class="mb-3 img-fluid">
           <div class="btn bg-bcolor px-4 py-2">자세히보기</div>
+
         </div>
         <div class="coffee float-right">
           <img src="images/coffee1.png" alt="coffee" class="img-fluid">
@@ -130,20 +141,31 @@
       </div>
     </div>
 
+
     <div class="section page4" data-anchor="4st">
       <div class="container">
         <div class="reserve float-left">
           <img src="images/reserve_visual_pc 1.png" alt="">
         </div>
-        <div class="reserve_txt float-right">
-          <img src="images/reserve1.png" alt="" class="d-flex">
-          <img src="images/reserve1-1.png" alt="">
+        <div class="reserve_img float-right">
+          <img src="images/reserve1.png" alt="" class="mb-4">
+          <div class="reserve_txt my-3">
+            <a href="#" class="px-3 py-2">EXPLORE OUR STORY</a>
+          </div>
         </div>
       </div>
     </div>
 
 
-    <div class="section page5" data-anchor="5st"></div>
+    <div class="section page5" data-anchor="5st">
+      <div class="container">
+        <div class="news float-left d-flex flex-column justify-content-center align-items-center">
+          <img src="images/news_txt.png" alt="" class="mb-3 img-fluid">
+          <div class="btn bg-ncolor px-4 py-2">자세히보기</div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 <<script>

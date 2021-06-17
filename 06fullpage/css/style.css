@@ -32,6 +32,8 @@
 .section.page2 {background-image: url(../images/reward-bg.png);}
 .section.page3 {background-image: url(../images/coffee-bg.png);}
 .section.page4 {background-image: url(../images/reserve-bg.png);}
+.section.page5 {background-image: url(../images/news-bg.png);}
+
 
 #fp-nav.right{right: 50px; display: none;}
 .fp-tooltip.right{right:20px;}
@@ -50,11 +52,13 @@
 .section.page1 .menu .menu_1st.end {opacity:1; transform:translateY(10px);}
 
 .section.page1 .menu .menu_2st {position: absolute; top:-220px; right: 90px;
-                                opacity:0; transition: .7s; transform: translateY(-100px);}
+                                opacity:0; transition: .7s; transform: translateY(-100px);
+                                transition-delay: 0.3s}
 .section.page1 .menu .menu_2st.end {opacity:1; transform:translateY(10px);}
 
 .section.page1 .menu .menu_3st {position: absolute; top:-100px; right: -150px;
-                                opacity:0; transition: .7s; transform: translateY(-100px);}
+                                opacity:0; transition: .7s; transform: translateY(-100px);
+                                transition-delay: 0.6s}
 .section.page1 .menu .menu_3st.end {opacity:1; transform:translateY(10px);}
 
 
@@ -69,17 +73,35 @@
                                  border-bottom: 1px solid #4b615b}
 
 /* coffee .section.page3 */
-.section.page3 .coffee_txt {position: absolute;
-                            top:50%;}
+.section.page3 .container {position: relative;}
 .section.page3 .coffee_txt .btn.bg-bcolor {background: var(--box-color-2st);
                                           color:var(--bg-color-1st);
                                           border-radius: 25px}
-.section.page3 .coffee img {transform: translateY(50px);}
+.section.page3 .coffee_txt {position: absolute; top:-40px; left: 0;
+                            opacity:0; transition:.7s; transform:translateX(-300px);}
+.section.page3 .coffee_txt.end {opacity:1; transition:.7s; transform: translateX(30px);}
+.section.page3 .coffee {position: absolute; right: 0; top:-270px;
+                        opacity:0; transition:.7s; transform:translateX(300px);}
+.section.page3 .coffee.end {opacity:1; transition:.7s; transform: translateX(30px);}
+
 
 /* coffee .section.page4 */
+.section.page4 .reserve {position: absolute; top:250px}
+.section.page4 .reserve_txt a{background: var(--bg-color-1st);
+                              color:#333; text-decoration: none;
+                              font-size:1.3rem;}
+.section.page4 .reserve_txt a:hover{background: var(--box-color-3st);
+                                    color:var(--bg-color-1st)}
+
+
+
+/* news .section.page5 */
+.section.page5 .news .btn.bg-ncolor {background: var(--box-color-3st);
+                                     color:var(--bg-color-1st)}
 
 
 /* width 1000px */
 @media screen and (max-width:1000px){
 .section.page1 .home{position: relative; top:-100px;}
 }
+<a href="#" class="px-3 py-3">EXPLORE OUR STORY</a>
