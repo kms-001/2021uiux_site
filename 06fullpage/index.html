@@ -41,6 +41,13 @@
                  $(".coffee_txt").removeClass("end");
                  $(".coffee").removeClass("end");
                }
+               if(index == 5){
+                 $(".beans").addClass("end");
+                 $(".beans_img").addClass("end");
+               }else{
+                 $(".beans").removeClass("end");
+                 $(".beans_img").removeClass("end");
+               }
               }
           })
       });
@@ -133,8 +140,8 @@
         <div class="coffee_txt float-left d-flex flex-column justify-content-center align-items-center">
           <img src="images/coffee1-1.png" alt="coffee" class="mb-3 img-fluid">
           <div class="btn bg-bcolor px-4 py-2">자세히보기</div>
-
         </div>
+
         <div class="coffee float-right">
           <img src="images/coffee1.png" alt="coffee" class="img-fluid">
         </div>
@@ -159,14 +166,24 @@
 
     <div class="section page5" data-anchor="5st">
       <div class="container">
-        <div class="news float-left d-flex flex-column justify-content-center align-items-center">
+        <div class="beans float-left d-flex flex-column justify-content-center align-items-center">
           <img src="images/news_txt.png" alt="" class="mb-3 img-fluid">
           <div class="btn bg-ncolor px-4 py-2">자세히보기</div>
         </div>
+      <div class="beans_img">
+        <img src="images/news1.png" alt="">
+        <img src="images/news2.png" alt="">
+        <img src="images/news3.png" alt="">
       </div>
+    </div>
+    </div>
 
+
+    <div class="section page6 fp-auto-height bg-dark py-5 bg-dark text-white text-center" data-anchor="m5st">
+      <div class="container">Copyrightⓒ 2021. All rights reserved.</div>
     </div>
   </div>
+
 
 <<script>
 

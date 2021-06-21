@@ -32,7 +32,7 @@
 .section.page2 {background-image: url(../images/reward-bg.png);}
 .section.page3 {background-image: url(../images/coffee-bg.png);}
 .section.page4 {background-image: url(../images/reserve-bg.png);}
-.section.page5 {background-image: url(../images/news-bg.png);}
+.section.page5 {background-image: url(../images/beans_bg.png);}
 
 
 #fp-nav.right{right: 50px; display: none;}
@@ -96,8 +96,21 @@
 
 
 /* news .section.page5 */
-.section.page5 .news .btn.bg-ncolor {background: var(--box-color-3st);
-                                     color:var(--bg-color-1st)}
+.section.page5 {position: relative;}
+.section.page5 .beans {position: absolute; top:45%;
+                       opacity:0; transition:.7s; transform:translateX(-300px);}
+.section.page5 .beans.end {opacity:1; transition:.7s; transform: translateX(30px);}
+.section.page5 .beans .btn.bg-ncolor {background: var(--box-color-3st);
+                                     color:var(--bg-color-1st);
+                                     border-radius: 25px}
+.section.page5 .beans_img {position: absolute; right: 340px; top:35%;
+                           opacity:0; transition:.7s; transform:translateX(300px);}
+.section.page5 .beans_img.end{opacity:1; transition:.7s; transform: translateX(30px);}
+.section.page5 .beans_img img {width: 180px;}
+
+
+/* footer */
+
 
 
 /* width 1000px */
