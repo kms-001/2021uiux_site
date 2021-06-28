@@ -95,8 +95,8 @@
 
 
 
-/* news .section.page5 */
-.section.page5 {position: relative;}
+/* beans .section.page5 */
+/* .section.page5 {position: relative;}
 .section.page5 .beans {position: absolute; top:45%;
                        opacity:0; transition:.7s; transform:translateX(-300px);}
 .section.page5 .beans.end {opacity:1; transition:.7s; transform: translateX(30px);}
@@ -106,7 +106,7 @@
 .section.page5 .beans_img {position: absolute; right: 420px; top:35%;
                            opacity:0; transition:.7s; transform:translateX(300px);}
 .section.page5 .beans_img.end{opacity:1; transition:.7s; transform: translateX(30px);}
-.section.page5 .beans_img img {width: 180px;}
+.section.page5 .beans_img img {width: 180px;} */
 
 
 /* footer */
@@ -117,4 +117,3 @@
 @media screen and (max-width:1000px){
 .section.page1 .home{position: relative; top:-100px;}
 }
-<a href="#" class="px-3 py-3">EXPLORE OUR STORY</a>
